@@ -1,0 +1,13 @@
+# Agent Hub - Python Dependencies
+
+# Core
+requests>=2.31.0
+pyyaml>=6.0.1
+python-dotenv>=1.0.1
+feedparser>=6.0.11
+
+# Groq SDK
+groq>=0.9.0
+
+# Testing
+pytest>=8.0.0

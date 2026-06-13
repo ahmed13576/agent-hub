@@ -1,0 +1,110 @@
+# Agent Hub - Source Configuration
+# This file defines all seed sources for the scraping pipeline.
+# New sources can be added manually here or auto-discovered during pipeline runs.
+
+github:
+  # Search queries for GitHub repository search API
+  search_queries:
+    - "claude code agent"
+    - "claude code skills"
+    - "claude code CLAUDE.md"
+    - "antigravity gemini agent"
+    - "gemini code cli"
+    - "cursor rules agent"
+    - "codex cli openai agent"
+    - "agentic coding workflow"
+    - "multi agent orchestration LLM"
+    - "token optimization LLM agent"
+    - "prompt engineering agent harness"
+    - "AI code assistant workflow"
+    - "claude-code"
+    - "agent-harness"
+
+  # Specific repos to track directly (owner/repo format)
+  tracked_repos:
+    - "anthropics/claude-code"
+    - "anthropics/anthropic-cookbook"
+    - "openai/codex"
+    - "getcursor/cursor"
+
+reddit:
+  # Subreddits to scrape via RSS
+  subreddits:
+    - "ClaudeDev"
+    - "LocalLLaMA"
+    - "ChatGPTCoding"
+    - "MachineLearning"
+    - "artificial"
+    - "ClaudeAI"
+    - "cursor"
+
+  # Search keywords within subreddit RSS (post-fetch filtering)
+  filter_keywords:
+    - "claude code"
+    - "antigravity"
+    - "cursor"
+    - "codex"
+    - "gemini cli"
+    - "agent"
+    - "token"
+    - "budget"
+    - "multi-agent"
+    - "orchestration"
+    - "prompt engineering"
+    - "CLAUDE.md"
+    - "skills"
+    - "workflow"
+
+blogs:
+  # RSS feed URLs for technical blogs
+  rss_feeds:
+    - url: "https://medium.com/feed/towards-data-science/tagged/ai"
+      name: "Towards Data Science - AI"
+    - url: "https://medium.com/feed/towards-data-science/tagged/llm"
+      name: "Towards Data Science - LLM"
+    - url: "https://medium.com/feed/towards-data-science/tagged/agents"
+      name: "Towards Data Science - Agents"
+    - url: "https://analyticsindiamag.com/feed/"
+      name: "Analytics India Magazine"
+    - url: "https://www.anthropic.com/blog/rss"
+      name: "Anthropic Blog"
+    - url: "https://openai.com/blog/rss.xml"
+      name: "OpenAI Blog"
+    - url: "https://blog.google/technology/ai/rss/"
+      name: "Google AI Blog"
+
+  # Keywords to filter blog posts (post-fetch filtering)
+  filter_keywords:
+    - "claude"
+    - "agent"
+    - "coding assistant"
+    - "token"
+    - "prompt"
+    - "multi-agent"
+    - "orchestration"
+    - "AI coding"
+    - "LLM workflow"
+
+twitter:
+  # Twitter/X scraping is optional and requires Bright Data or Nitter
+  # Nitter RSS instances (free, but may go down)
+  nitter_instances:
+    - "https://nitter.privacydev.net"
+    - "https://nitter.poast.org"
+
+  search_queries:
+    - "claude code"
+    - "agentic coding"
+    - "AI agent workflow"
+    - "cursor rules"
+    - "codex cli"
+
+  # Set to true to enable Twitter scraping (requires working Nitter or BRIGHTDATA_PROXY)
+  enabled: false
+
+# Dynamic Source Discovery settings
+discovery:
+  # Minimum relevance score (0-100) for auto-adding a discovered source
+  auto_add_threshold: 70
+  # Maximum new sources to auto-add per run
+  max_auto_add_per_run: 5
