@@ -21,3 +21,24 @@ We will build a serverless Python scraping and LLM-enrichment pipeline run via G
 - No hosting cost or server maintenance.
 - Front-end developers can easily consume the output JSON to build web dashboards later.
 - Limits dynamic user interactivity (e.g. user search queries must be done client-side or in the repository files).
+
+---
+
+## ADR-002: Hybrid Client Scraping Strategy
+
+**Date:** 2026-06-13
+**Status:** Accepted
+
+### Context
+Reddit, Medium/TDS, and Twitter/X implement different tiers of anti-scraping walls. Bright Data provides reliable bypassing tools but charges usage fees. We need a way to run the scraper completely free by default but retain the ability to route traffic through paid proxies if blocks occur.
+
+### Decision
+We will implement a hybrid HTTP client:
+- **Free-by-default**: Fetch Reddit and Blog RSS feeds directly using standard HTTP requests with rotating User-Agent headers, and search GitHub using official APIs.
+- **Modular proxy support**: If the `BRIGHTDATA_PROXY` environment variable is defined, the client will route blocked target URLs through Bright Data's Web Unlocker proxy. Otherwise, it defaults to direct unproxied requests.
+
+### Consequences
+- Scraping runs completely free on GitHub Actions using seed feeds.
+- Zero maintenance cost for default operation.
+- Easy upgrade path: setting a single secret (`BRIGHTDATA_PROXY`) in the GitHub repo activates paid bypasses for trickier sources (like Twitter) without modifying code.
+
