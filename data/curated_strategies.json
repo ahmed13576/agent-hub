@@ -1,0 +1,219 @@
+[
+  {
+    "id": "bt-001",
+    "source": "github",
+    "title": "Agent Rules Collection",
+    "url": "https://github.com/example/agent-rules",
+    "description": "Curated RULES.md patterns.",
+    "author": "ai-org",
+    "metadata": {
+      "stars": 5000
+    },
+    "tags": [
+      "rules",
+      "config"
+    ],
+    "scraped_at": "2026-06-13T10:00:00Z",
+    "raw_content": "Full rules collection content.",
+    "summary": "A comprehensive collection of RULES.md and CLAUDE.md configuration patterns for coding agents, covering token optimization and project setup.",
+    "category": "battle-tested",
+    "effectiveness_score": 0.9,
+    "relevance_score": 0.95,
+    "enriched_tags": [
+      "configuration",
+      "prompting"
+    ],
+    "enriched_at": "2026-06-13T11:00:00Z",
+    "model_used": "llama-3.3-70b",
+    "enrichment_version": "abc123"
+  },
+  {
+    "id": "bt-002",
+    "source": "github",
+    "title": "Multi-Agent Framework",
+    "url": "https://github.com/example/multi-agent",
+    "description": "Production multi-agent orchestration.",
+    "author": "agent-team",
+    "metadata": {
+      "stars": 8000
+    },
+    "tags": [
+      "multi-agent"
+    ],
+    "scraped_at": "2026-06-13T10:00:00Z",
+    "raw_content": "Multi-agent framework content.",
+    "summary": "A battle-tested framework for orchestrating multiple AI coding agents with shared memory, task decomposition, and parallel execution support.",
+    "category": "battle-tested",
+    "effectiveness_score": 0.88,
+    "relevance_score": 0.85,
+    "enriched_tags": [
+      "multi-agent",
+      "frameworks"
+    ],
+    "enriched_at": "2026-06-13T11:00:00Z",
+    "model_used": "llama-3.3-70b",
+    "enrichment_version": "abc123"
+  },
+  {
+    "id": "bt-003",
+    "source": "blog",
+    "title": "Token Optimization | Best Practices",
+    "url": "https://blog.example.com/tokens",
+    "description": "Guide to token saving.",
+    "author": "Sarah Chen",
+    "metadata": {
+      "blog_name": "TechBlog"
+    },
+    "tags": [
+      "tokens"
+    ],
+    "scraped_at": "2026-06-13T10:00:00Z",
+    "raw_content": "Token optimization guide content.",
+    "summary": "An in-depth guide covering context window management and prompt compression strategies for AI coding agents with benchmarks.",
+    "category": "battle-tested",
+    "effectiveness_score": 0.78,
+    "relevance_score": 0.72,
+    "enriched_tags": [
+      "token-saving",
+      "cost-optimization"
+    ],
+    "enriched_at": "2026-06-13T11:00:00Z",
+    "model_used": "llama-3.3-70b",
+    "enrichment_version": "abc123"
+  },
+  {
+    "id": "nu-001",
+    "source": "reddit",
+    "title": "New context compression technique",
+    "url": "https://reddit.com/r/ClaudeDev/comments/ex1",
+    "description": "3x compression.",
+    "author": "u/compressor",
+    "metadata": {
+      "subreddit": "ClaudeDev",
+      "score": 400
+    },
+    "tags": [
+      "compression"
+    ],
+    "scraped_at": "2026-06-13T10:00:00Z",
+    "raw_content": "Context compression technique details.",
+    "summary": "A novel context window compression technique achieving 3x token reduction while maintaining 95% task accuracy in agentic coding workflows.",
+    "category": "new-upcoming",
+    "effectiveness_score": 0.65,
+    "relevance_score": 0.88,
+    "enriched_tags": [
+      "token-saving",
+      "context-management"
+    ],
+    "enriched_at": "2026-06-13T11:00:00Z",
+    "model_used": "llama-3.3-70b",
+    "enrichment_version": "abc123"
+  },
+  {
+    "id": "nu-002",
+    "source": "github",
+    "title": "MCP Server `Registry`",
+    "url": "https://github.com/example/mcp-reg",
+    "description": "MCP server registry.",
+    "author": "mcp-dev",
+    "metadata": {
+      "stars": 120
+    },
+    "tags": [
+      "mcp"
+    ],
+    "scraped_at": "2026-06-13T10:00:00Z",
+    "raw_content": "MCP registry content.",
+    "summary": "A universal registry and integration toolkit for Model Context Protocol servers, supporting discovery, installation, and configuration.",
+    "category": "new-upcoming",
+    "effectiveness_score": 0.45,
+    "relevance_score": 0.65,
+    "enriched_tags": [
+      "frameworks",
+      "configuration"
+    ],
+    "enriched_at": "2026-06-13T11:00:00Z",
+    "model_used": "llama-3.3-70b",
+    "enrichment_version": "abc123"
+  },
+  {
+    "id": "nu-003",
+    "source": "reddit",
+    "title": "Git diff as context â€” 70% savings",
+    "url": "https://reddit.com/r/LocalLLaMA/comments/ex2",
+    "description": "Token saving technique.",
+    "author": "u/diff_dev",
+    "metadata": {
+      "subreddit": "LocalLLaMA",
+      "score": 567
+    },
+    "tags": [
+      "git"
+    ],
+    "scraped_at": "2026-06-13T10:00:00Z",
+    "raw_content": "Git diff technique details.",
+    "summary": "A developer technique of feeding git diffs instead of full file contents to coding agents, dramatically reducing token usage by 70%.",
+    "category": "new-upcoming",
+    "effectiveness_score": 0.55,
+    "relevance_score": 0.55,
+    "enriched_tags": [
+      "token-saving",
+      "context-management"
+    ],
+    "enriched_at": "2026-06-13T11:00:00Z",
+    "model_used": "llama-3.3-70b",
+    "enrichment_version": "abc123"
+  },
+  {
+    "id": "exp-001",
+    "source": "github",
+    "title": "Token Zip Alpha",
+    "url": "https://github.com/example/token-zip",
+    "description": "AST-aware compression.",
+    "author": "research-lab",
+    "metadata": {
+      "stars": 23
+    },
+    "tags": [
+      "compression"
+    ],
+    "scraped_at": "2026-06-13T10:00:00Z",
+    "raw_content": "Token zip alpha content.",
+    "summary": "An experimental library for compressing code context before sending to LLMs using AST parsing to identify key structures and generate compressed representations.",
+    "category": "experimental",
+    "effectiveness_score": 0.25,
+    "relevance_score": 0.7,
+    "enriched_tags": [
+      "token-saving"
+    ],
+    "enriched_at": "2026-06-13T11:00:00Z",
+    "model_used": "llama-3.3-70b",
+    "enrichment_version": "abc123"
+  },
+  {
+    "id": "exp-002",
+    "source": "github",
+    "title": "Agent Memory Net",
+    "url": "https://github.com/example/memory-net",
+    "description": "Neural memory for agents.",
+    "author": "ml-lab",
+    "metadata": {
+      "stars": 15
+    },
+    "tags": [
+      "memory"
+    ],
+    "scraped_at": "2026-06-13T10:00:00Z",
+    "raw_content": "Agent memory net content.",
+    "summary": "Implementation of neural episodic memory for coding agents providing vector-based memory store for remembering and retrieving past session context.",
+    "category": "experimental",
+    "effectiveness_score": 0.18,
+    "relevance_score": 0.6,
+    "enriched_tags": [
+      "context-management"
+    ],
+    "enriched_at": "2026-06-13T11:00:00Z",
+    "model_used": "llama-3.3-70b",
+    "enrichment_version": "abc123"
+  }
+]
