@@ -78,14 +78,15 @@ class Pipeline:
         self._db_path = config.database_path
         self._discovered_path = config.discovered_sources_path
 
-    def run(self, enrich: bool = False) -> dict:
+    def run(self, enrich: bool = False, generate: bool = False) -> dict:
         """
         Execute the full pipeline.
 
         Returns:
             Stats dict with keys: new_items, duplicates_skipped,
             domains_discovered, total_in_db, errors, and
-            enrichment_stats (if enrich=True).
+            enrichment_stats (if enrich=True),
+            catalog_stats (if generate=True).
         """
         stats = {
             "new_items": 0,
@@ -136,6 +137,20 @@ class Pipeline:
         # Step 6: Final count
         db = self._load_database()
         stats["total_in_db"] = len(db)
+
+        # Step 7: Generate catalog (optional)
+        if generate:
+            from src.generator.curated_filter import save_curated_strategies
+            from src.generator.catalog import write_catalog
+            from src.generator.curated_filter import load_curated_strategies
+
+            curated_path = save_curated_strategies(db)
+            logger.info(f"PIPELINE: Curated strategies saved to {curated_path}")
+
+            curated = load_curated_strategies()
+            catalog_stats = write_catalog(curated)
+            stats["catalog_stats"] = catalog_stats
+            logger.info(f"PIPELINE: Catalog generated — {catalog_stats}")
 
         logger.info("=" * 60)
         logger.info(f"PIPELINE: Run complete — {stats['new_items']} new, "

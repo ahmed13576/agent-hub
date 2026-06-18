@@ -20,8 +20,9 @@ def main():
     """Run the Agent Hub scraping pipeline.
 
     CLI flags:
-        --enrich  Enable LLM enrichment via Groq API
-        --eval    Run golden dataset evaluation (requires --enrich or standalone)
+        --enrich    Enable LLM enrichment via Groq API
+        --generate  Generate markdown catalog and curated_strategies.json
+        --eval      Run golden dataset evaluation (requires --enrich or standalone)
     """
     # Configure logging
     logging.basicConfig(
@@ -44,16 +45,19 @@ def main():
     # Parse CLI flags
     enrich = "--enrich" in sys.argv
     run_eval = "--eval" in sys.argv
+    generate = "--generate" in sys.argv
 
     if enrich:
         logger.info("Enrichment: ENABLED (--enrich flag)")
+    if generate:
+        logger.info("Catalog generation: ENABLED (--generate flag)")
     if run_eval:
         logger.info("Evaluation: ENABLED (--eval flag)")
 
     # Run the pipeline
     try:
         pipeline = Pipeline()
-        stats = pipeline.run(enrich=enrich)
+        stats = pipeline.run(enrich=enrich, generate=generate)
 
         # Print summary
         logger.info("")
@@ -76,6 +80,10 @@ def main():
             logger.info(f"  Enrichment skipped:   {es['skipped']}")
             logger.info(f"  Enrichment failed:    {es['failed']}")
 
+        if "catalog_stats" in stats:
+            cs = stats["catalog_stats"]
+            logger.info(f"  Catalog generated:    {cs['category_files']} category files")
+            logger.info(f"  Curated items:        {cs['total_items']}")
         # Run golden dataset evaluation if requested
         if run_eval:
             logger.info("")
