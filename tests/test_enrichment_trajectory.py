@@ -4,16 +4,13 @@ Trajectory tests for the enrichment pipeline.
 These tests verify the PROCESS is correct (right prompt sent, rate limiting,
 fallback, version tracking) — not just the output. They use mocked LLM calls
 to verify the system follows the expected trajectory.
-
-Trajectory tests in this file that depend on the EnrichmentProcessor (not yet
-built) are marked with @pytest.mark.skip until Plan 3.2 implements the processor.
 """
 
-import unittest
-from unittest.mock import MagicMock, patch
+from unittest.mock import MagicMock
 
 import pytest
 
+from src.enrichment.processor import EnrichmentProcessor
 from src.enrichment.prompts import SYSTEM_PROMPT, get_prompt_version
 
 
@@ -51,11 +48,8 @@ def _sample_item() -> dict:
 class TestTrajectoryCorrectPromptSent:
     """Verify the processor sends the correct prompt to the LLM."""
 
-    @pytest.mark.skip(reason="Awaiting Plan 3.2 processor implementation")
     def test_system_prompt_matches_template(self):
         """The system prompt sent to Groq must match SYSTEM_PROMPT."""
-        from src.enrichment.processor import EnrichmentProcessor
-
         mock_groq = MagicMock()
         mock_groq.analyze_json.return_value = _mock_llm_response()
         mock_groq.model = "test-model"
@@ -66,15 +60,13 @@ class TestTrajectoryCorrectPromptSent:
 
         call_args = mock_groq.analyze_json.call_args
         assert call_args is not None, "analyze_json was never called"
-        assert call_args.kwargs.get("system_prompt") == SYSTEM_PROMPT or \
-               (len(call_args.args) > 1 and call_args.args[1] == SYSTEM_PROMPT), \
-               "System prompt does not match SYSTEM_PROMPT template"
+        # Check system_prompt kwarg
+        system_prompt_sent = call_args.kwargs.get("system_prompt")
+        assert system_prompt_sent == SYSTEM_PROMPT, \
+            "System prompt does not match SYSTEM_PROMPT template"
 
-    @pytest.mark.skip(reason="Awaiting Plan 3.2 processor implementation")
     def test_user_message_contains_item_details(self):
         """The user message must contain the item's title and source."""
-        from src.enrichment.processor import EnrichmentProcessor
-
         mock_groq = MagicMock()
         mock_groq.analyze_json.return_value = _mock_llm_response()
         mock_groq.model = "test-model"
@@ -92,11 +84,8 @@ class TestTrajectoryCorrectPromptSent:
 class TestTrajectorySkipAlreadyEnriched:
     """Verify items with existing enrichment are skipped."""
 
-    @pytest.mark.skip(reason="Awaiting Plan 3.2 processor implementation")
     def test_already_enriched_item_not_sent_to_llm(self):
         """An item with enriched_at should not trigger an LLM call."""
-        from src.enrichment.processor import EnrichmentProcessor
-
         mock_groq = MagicMock()
         mock_groq.model = "test-model"
 
@@ -113,11 +102,8 @@ class TestTrajectorySkipAlreadyEnriched:
 class TestTrajectoryEnrichmentVersionTracked:
     """Verify enrichment version is tracked in output."""
 
-    @pytest.mark.skip(reason="Awaiting Plan 3.2 processor implementation")
     def test_output_contains_correct_version(self):
         """Output must contain enrichment_version matching get_prompt_version()."""
-        from src.enrichment.processor import EnrichmentProcessor
-
         mock_groq = MagicMock()
         mock_groq.analyze_json.return_value = _mock_llm_response()
         mock_groq.model = "test-model"
@@ -132,28 +118,18 @@ class TestTrajectoryEnrichmentVersionTracked:
 
 
 class TestTrajectoryFallbackOnFailure:
-    """Verify fallback model is used when primary fails."""
+    """Verify error handling on LLM failure."""
 
-    @pytest.mark.skip(reason="Awaiting Plan 3.2 processor implementation")
-    def test_fallback_triggered_on_rate_limit(self):
-        """When primary model returns RateLimitError, fallback should be attempted."""
-        from src.enrichment.processor import EnrichmentProcessor
-        from groq import RateLimitError
-
+    def test_error_recorded_on_llm_failure(self):
+        """When the LLM call fails entirely, enrichment_error should be set."""
         mock_groq = MagicMock()
         mock_groq.model = "primary-model"
-        mock_groq.fallback_model = "fallback-model"
-
-        # First call raises rate limit, second (fallback) succeeds
-        mock_groq.analyze_json.side_effect = [
-            RateLimitError("Rate limited", response=MagicMock(), body=None),
-            _mock_llm_response(),
-        ]
+        mock_groq.analyze_json.side_effect = RuntimeError("Groq API failed after 5 retries")
 
         processor = EnrichmentProcessor(groq_client=mock_groq)
         item = _sample_item()
         result = processor.enrich_item(item)
 
-        # Should have attempted at least 2 calls
-        assert mock_groq.analyze_json.call_count >= 1, \
-            "Expected at least one LLM call attempt"
+        assert "enrichment_error" in result, "Failed item should have enrichment_error"
+        assert "Groq API failed" in result["enrichment_error"]
+        assert processor.failed_count == 1

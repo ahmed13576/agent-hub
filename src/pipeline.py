@@ -78,13 +78,14 @@ class Pipeline:
         self._db_path = config.database_path
         self._discovered_path = config.discovered_sources_path
 
-    def run(self) -> dict:
+    def run(self, enrich: bool = False) -> dict:
         """
         Execute the full pipeline.
 
         Returns:
             Stats dict with keys: new_items, duplicates_skipped,
-            domains_discovered, total_in_db, errors.
+            domains_discovered, total_in_db, errors, and
+            enrichment_stats (if enrich=True).
         """
         stats = {
             "new_items": 0,
@@ -111,17 +112,28 @@ class Pipeline:
             f"({stats['duplicates_skipped']} duplicates skipped)"
         )
 
-        # Step 3: Discover new sources
+        # Step 3: Enrich (optional)
+        if enrich and new_items:
+            from src.enrichment.processor import EnrichmentProcessor
+            processor = EnrichmentProcessor()
+            new_items = processor.enrich_batch(
+                new_items,
+                progress_callback=lambda i, t: logger.info(f"Enriching: {i}/{t}"),
+            )
+            stats["enrichment_stats"] = processor.get_stats()
+            logger.info(f"PIPELINE: Enrichment complete — {processor.get_stats()}")
+
+        # Step 4: Discover new sources
         if new_items:
             discovered_count = self._discover_sources(new_items)
             stats["domains_discovered"] = discovered_count
             logger.info(f"PIPELINE: {discovered_count} new domains discovered")
 
-        # Step 4: Save to database
+        # Step 5: Save to database
         if new_items:
             self._save_to_database(new_items)
 
-        # Final count
+        # Step 6: Final count
         db = self._load_database()
         stats["total_in_db"] = len(db)
 

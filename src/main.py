@@ -17,7 +17,12 @@ from src.pipeline import Pipeline
 
 
 def main():
-    """Run the Agent Hub scraping pipeline."""
+    """Run the Agent Hub scraping pipeline.
+
+    CLI flags:
+        --enrich  Enable LLM enrichment via Groq API
+        --eval    Run golden dataset evaluation (requires --enrich or standalone)
+    """
     # Configure logging
     logging.basicConfig(
         level=logging.INFO,
@@ -36,10 +41,19 @@ def main():
     for warning in warnings:
         logger.warning(f"Config: {warning}")
 
+    # Parse CLI flags
+    enrich = "--enrich" in sys.argv
+    run_eval = "--eval" in sys.argv
+
+    if enrich:
+        logger.info("Enrichment: ENABLED (--enrich flag)")
+    if run_eval:
+        logger.info("Evaluation: ENABLED (--eval flag)")
+
     # Run the pipeline
     try:
         pipeline = Pipeline()
-        stats = pipeline.run()
+        stats = pipeline.run(enrich=enrich)
 
         # Print summary
         logger.info("")
@@ -55,6 +69,35 @@ def main():
             logger.warning(f"  Errors encountered:   {len(stats['errors'])}")
             for error in stats["errors"]:
                 logger.warning(f"    - {error}")
+
+        if "enrichment_stats" in stats:
+            es = stats["enrichment_stats"]
+            logger.info(f"  Enriched:             {es['enriched']}")
+            logger.info(f"  Enrichment skipped:   {es['skipped']}")
+            logger.info(f"  Enrichment failed:    {es['failed']}")
+
+        # Run golden dataset evaluation if requested
+        if run_eval:
+            logger.info("")
+            logger.info("=" * 60)
+            logger.info("GOLDEN DATASET EVALUATION")
+            logger.info("=" * 60)
+            from src.enrichment.processor import EnrichmentProcessor
+            from src.enrichment.eval_runner import run_eval as do_eval, check_thresholds
+            processor = EnrichmentProcessor()
+            metrics = do_eval(processor)
+            passed, failures = check_thresholds(metrics)
+            logger.info(f"  Category accuracy:    {metrics.get('category_accuracy', 0):.1%}")
+            logger.info(f"  Relevance accuracy:   {metrics.get('relevance_accuracy', 0):.1%}")
+            logger.info(f"  Effectiveness acc.:   {metrics.get('effectiveness_accuracy', 0):.1%}")
+            logger.info(f"  Avg tag recall:       {metrics.get('avg_tag_recall', 0):.1%}")
+            logger.info(f"  Noise filtering:      {metrics.get('noise_filtering', 0):.1%}")
+            if passed:
+                logger.info("  VERDICT: ✅ PASS — all thresholds met")
+            else:
+                logger.warning(f"  VERDICT: ❌ FAIL — {len(failures)} threshold(s) missed")
+                for f in failures:
+                    logger.warning(f"    - {f}")
 
         logger.info("=" * 60)
         return 0
