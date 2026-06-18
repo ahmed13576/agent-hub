@@ -1,0 +1,362 @@
+[
+  {
+    "id": "a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2",
+    "source": "github",
+    "title": "awesome-claude-rules - Curated Collection of RULES.md and CLAUDE.md Patterns",
+    "url": "https://github.com/example/awesome-claude-rules",
+    "description": "A comprehensive, community-driven collection of RULES.md and CLAUDE.md configuration patterns for Claude Code. Includes token-saving strategies, project-specific instructions, and workflow optimization techniques used by thousands of developers.",
+    "author": "ai-patterns-org",
+    "metadata": {"stars": 4500, "forks": 820, "language": "Markdown", "updated_at": "2026-06-01"},
+    "tags": ["claude", "rules-md", "configuration", "best-practices"],
+    "scraped_at": "2026-06-13T10:00:00Z",
+    "raw_content": "A curated collection of RULES.md and CLAUDE.md patterns that help developers configure Claude Code for maximum productivity. Includes sections on token budgeting, context management, multi-file editing patterns, and project-specific instructions. Over 4500 stars and 820 forks. Used by major open-source projects.",
+    "expected_enrichment": {
+      "expected_category": "battle-tested",
+      "expected_relevance_range": [0.85, 1.0],
+      "expected_effectiveness_range": [0.75, 1.0],
+      "expected_tags_must_include": ["configuration", "prompting"],
+      "expected_tags_must_not_include": ["debugging"],
+      "summary_must_mention": ["RULES.md", "Claude"]
+    }
+  },
+  {
+    "id": "b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3",
+    "source": "github",
+    "title": "AgentForge - Production Multi-Agent Orchestration Framework",
+    "url": "https://github.com/example/agentforge",
+    "description": "A battle-tested Python framework for building and orchestrating multiple AI coding agents. Supports task decomposition, parallel execution, and inter-agent communication. Used in production by 200+ companies.",
+    "author": "agentforge-team",
+    "metadata": {"stars": 8200, "forks": 1100, "language": "Python", "updated_at": "2026-05-28"},
+    "tags": ["multi-agent", "orchestration", "framework", "production"],
+    "scraped_at": "2026-06-13T10:00:00Z",
+    "raw_content": "AgentForge is a production-ready framework for orchestrating multiple AI coding agents. It provides task decomposition, parallel agent execution, shared memory, and inter-agent messaging. Built on asyncio with support for Claude, GPT, and Gemini backends. 8200 stars, used in production.",
+    "expected_enrichment": {
+      "expected_category": "battle-tested",
+      "expected_relevance_range": [0.85, 1.0],
+      "expected_effectiveness_range": [0.8, 1.0],
+      "expected_tags_must_include": ["multi-agent", "frameworks"],
+      "expected_tags_must_not_include": [],
+      "summary_must_mention": ["multi-agent", "orchestration"]
+    }
+  },
+  {
+    "id": "c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4",
+    "source": "blog",
+    "title": "The Definitive Guide to Token Optimization in Agentic Coding Workflows",
+    "url": "https://techblog.example.com/token-optimization-guide",
+    "description": "An in-depth guide covering context window management, prompt compression, and token budgeting strategies for AI coding agents. Benchmarked across Claude Code, Cursor, and GitHub Copilot.",
+    "author": "Sarah Chen",
+    "metadata": {"blog_name": "TechBlog", "published_date": "2026-03-15"},
+    "tags": ["token-optimization", "context-window", "benchmarks"],
+    "scraped_at": "2026-06-13T10:00:00Z",
+    "raw_content": "This definitive guide covers every aspect of token optimization for agentic coding workflows. Topics include: context window budgeting, prompt compression techniques, incremental context loading, and cost-per-task analysis. Includes benchmarks across Claude Code, Cursor, and Copilot showing 40-60% token savings with proper optimization.",
+    "expected_enrichment": {
+      "expected_category": "battle-tested",
+      "expected_relevance_range": [0.9, 1.0],
+      "expected_effectiveness_range": [0.7, 1.0],
+      "expected_tags_must_include": ["token-saving", "cost-optimization"],
+      "expected_tags_must_not_include": [],
+      "summary_must_mention": ["token"]
+    }
+  },
+  {
+    "id": "d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5",
+    "source": "github",
+    "title": "PromptSmith - Advanced Prompt Engineering Framework for Coding Agents",
+    "url": "https://github.com/example/promptsmith",
+    "description": "A well-established prompt engineering framework specifically designed for AI coding agents. Provides reusable prompt templates, chain-of-thought patterns, and structured output parsing. 3200+ stars.",
+    "author": "promptsmith-dev",
+    "metadata": {"stars": 3200, "forks": 450, "language": "Python", "updated_at": "2026-05-15"},
+    "tags": ["prompt-engineering", "templates", "chain-of-thought"],
+    "scraped_at": "2026-06-13T10:00:00Z",
+    "raw_content": "PromptSmith provides a comprehensive prompt engineering toolkit for coding agents. Features include: reusable prompt templates with variable injection, chain-of-thought scaffolding, structured JSON output parsing, and automatic prompt versioning. Extensively used in production coding workflows.",
+    "expected_enrichment": {
+      "expected_category": "battle-tested",
+      "expected_relevance_range": [0.8, 1.0],
+      "expected_effectiveness_range": [0.7, 1.0],
+      "expected_tags_must_include": ["prompting", "frameworks"],
+      "expected_tags_must_not_include": [],
+      "summary_must_mention": ["prompt"]
+    }
+  },
+  {
+    "id": "e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6",
+    "source": "github",
+    "title": "AgentBudget - Real-Time Cost Monitoring Dashboard for AI Coding Agents",
+    "url": "https://github.com/example/agentbudget",
+    "description": "A production-ready cost monitoring tool that tracks API usage, token consumption, and spend across Claude, GPT, and Gemini. Provides per-task cost breakdowns and budget alerts. 2800 stars.",
+    "author": "devops-ai",
+    "metadata": {"stars": 2800, "forks": 340, "language": "TypeScript", "updated_at": "2026-04-20"},
+    "tags": ["cost-monitoring", "budget", "dashboard", "api-usage"],
+    "scraped_at": "2026-06-13T10:00:00Z",
+    "raw_content": "AgentBudget monitors real-time API costs for AI coding agents. Features: per-task cost tracking, monthly budget alerts, provider comparison dashboards, and CSV export. Supports Claude, GPT-4, Gemini, and Groq. Used by development teams to control AI spending.",
+    "expected_enrichment": {
+      "expected_category": "battle-tested",
+      "expected_relevance_range": [0.7, 1.0],
+      "expected_effectiveness_range": [0.65, 1.0],
+      "expected_tags_must_include": ["budget-control", "cost-optimization"],
+      "expected_tags_must_not_include": [],
+      "summary_must_mention": ["cost"]
+    }
+  },
+  {
+    "id": "f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1",
+    "source": "github",
+    "title": "agent-sandbox - Lightweight Agent Testing Harness",
+    "url": "https://github.com/example/agent-sandbox",
+    "description": "A recently published lightweight testing harness for AI coding agents. Provides isolated execution environments, output capture, and assertion helpers. Only 85 stars but growing fast.",
+    "author": "sandbox-dev",
+    "metadata": {"stars": 85, "forks": 12, "language": "Python", "updated_at": "2026-06-10"},
+    "tags": ["testing", "sandbox", "harness", "new"],
+    "scraped_at": "2026-06-13T10:00:00Z",
+    "raw_content": "agent-sandbox provides a lightweight testing harness for AI coding agents. Spin up isolated environments, capture agent outputs, and write assertions against agent behavior. New project, 85 stars and growing. Supports Claude Code and Cursor agent modes.",
+    "expected_enrichment": {
+      "expected_category": "new-upcoming",
+      "expected_relevance_range": [0.7, 1.0],
+      "expected_effectiveness_range": [0.3, 0.7],
+      "expected_tags_must_include": ["debugging"],
+      "expected_tags_must_not_include": [],
+      "summary_must_mention": ["testing"]
+    }
+  },
+  {
+    "id": "a2b3c4d5e6f7a2b3c4d5e6f7a2b3c4d5e6f7a2b3c4d5e6f7a2b3c4d5e6f7a2b3",
+    "source": "blog",
+    "title": "Shrinking Context Windows: A New Compression Technique for LLM Agents",
+    "url": "https://techblog.example.com/context-compression-new",
+    "description": "A blog post introducing a novel context window compression technique that achieves 3x reduction in token usage while maintaining 95% task accuracy. Published last week.",
+    "author": "Dr. Alex Kim",
+    "metadata": {"blog_name": "AI Research Weekly", "published_date": "2026-06-08"},
+    "tags": ["compression", "context-window", "research"],
+    "scraped_at": "2026-06-13T10:00:00Z",
+    "raw_content": "We present a new context compression technique for LLM coding agents. By hierarchically summarizing file contents and selectively loading code sections, we achieve 3x token reduction with only 5% accuracy loss. Early results from 50 developer trials show significant cost savings. Code available on GitHub (12 stars).",
+    "expected_enrichment": {
+      "expected_category": "new-upcoming",
+      "expected_relevance_range": [0.8, 1.0],
+      "expected_effectiveness_range": [0.4, 0.75],
+      "expected_tags_must_include": ["token-saving", "context-management"],
+      "expected_tags_must_not_include": [],
+      "summary_must_mention": ["compression"]
+    }
+  },
+  {
+    "id": "b3c4d5e6f7a2b3c4d5e6f7a2b3c4d5e6f7a2b3c4d5e6f7a2b3c4d5e6f7a2b3c4",
+    "source": "reddit",
+    "title": "Just built a multi-model router that picks the cheapest LLM for each coding subtask",
+    "url": "https://reddit.com/r/ClaudeDev/comments/example1",
+    "description": "Reddit post describing an experimental approach to routing coding subtasks to different LLMs based on complexity and cost. Uses Claude for hard tasks, GPT-4o-mini for simple ones.",
+    "author": "u/code_optimizer",
+    "metadata": {"subreddit": "ClaudeDev", "score": 342, "num_comments": 87},
+    "tags": ["multi-model", "cost-saving", "routing"],
+    "scraped_at": "2026-06-13T10:00:00Z",
+    "raw_content": "I built a router that analyzes each coding subtask and routes it to the cheapest capable LLM. Hard refactoring goes to Claude Opus, simple formatting to GPT-4o-mini, and documentation to Gemini Flash. Saved 60% on API costs in my side project. Code is on my GitHub, only 45 stars so far but I think this approach has legs.",
+    "expected_enrichment": {
+      "expected_category": "new-upcoming",
+      "expected_relevance_range": [0.75, 1.0],
+      "expected_effectiveness_range": [0.4, 0.75],
+      "expected_tags_must_include": ["cost-optimization"],
+      "expected_tags_must_not_include": [],
+      "summary_must_mention": ["router"]
+    }
+  },
+  {
+    "id": "c4d5e6f7a2b3c4d5e6f7a2b3c4d5e6f7a2b3c4d5e6f7a2b3c4d5e6f7a2b3c4d5",
+    "source": "github",
+    "title": "mcp-hub - Universal MCP Server Registry and Integration Kit",
+    "url": "https://github.com/example/mcp-hub",
+    "description": "A new registry and integration toolkit for Model Context Protocol (MCP) servers. Provides discovery, installation, and configuration of MCP tools for coding agents. 120 stars, published 3 weeks ago.",
+    "author": "mcp-community",
+    "metadata": {"stars": 120, "forks": 18, "language": "TypeScript", "updated_at": "2026-06-05"},
+    "tags": ["mcp", "integration", "tools", "new"],
+    "scraped_at": "2026-06-13T10:00:00Z",
+    "raw_content": "mcp-hub provides a universal registry for MCP servers. Discover, install, and configure MCP tools for your coding agent setup. Supports Claude Code, Cursor, and any MCP-compatible client. Includes 50+ pre-configured server definitions. New project, growing community.",
+    "expected_enrichment": {
+      "expected_category": "new-upcoming",
+      "expected_relevance_range": [0.75, 1.0],
+      "expected_effectiveness_range": [0.35, 0.7],
+      "expected_tags_must_include": ["frameworks"],
+      "expected_tags_must_not_include": [],
+      "summary_must_mention": ["MCP"]
+    }
+  },
+  {
+    "id": "d5e6f7a2b3c4d5e6f7a2b3c4d5e6f7a2b3c4d5e6f7a2b3c4d5e6f7a2b3c4d5e6",
+    "source": "reddit",
+    "title": "New technique: using git diff as context instead of full files — cuts tokens by 70%",
+    "url": "https://reddit.com/r/LocalLLaMA/comments/example2",
+    "description": "A developer shares their technique of feeding git diffs instead of full file contents to coding agents, dramatically reducing token usage while maintaining edit accuracy.",
+    "author": "u/diff_coder",
+    "metadata": {"subreddit": "LocalLLaMA", "score": 567, "num_comments": 123},
+    "tags": ["git", "token-saving", "technique"],
+    "scraped_at": "2026-06-13T10:00:00Z",
+    "raw_content": "Instead of loading full files into the agent context, I only load the git diff of recent changes plus a compressed outline of the full file. This cuts token usage by 70% for iterative coding sessions. My workflow: make change → commit → agent sees diff + outline → suggests next change. Works great with Claude Code.",
+    "expected_enrichment": {
+      "expected_category": "new-upcoming",
+      "expected_relevance_range": [0.85, 1.0],
+      "expected_effectiveness_range": [0.45, 0.8],
+      "expected_tags_must_include": ["token-saving", "context-management"],
+      "expected_tags_must_not_include": [],
+      "summary_must_mention": ["diff"]
+    }
+  },
+  {
+    "id": "e6f7a2b3c4d5e6f7a2b3c4d5e6f7a2b3c4d5e6f7a2b3c4d5e6f7a2b3c4d5e6f7",
+    "source": "github",
+    "title": "token-zip - Experimental Token Compression Library for LLM Contexts",
+    "url": "https://github.com/example/token-zip",
+    "description": "An alpha-stage library that compresses code context using AST-aware summarization before sending to LLMs. Experimental, 23 stars, limited testing.",
+    "author": "research-lab",
+    "metadata": {"stars": 23, "forks": 3, "language": "Python", "updated_at": "2026-06-01"},
+    "tags": ["compression", "ast", "experimental", "alpha"],
+    "scraped_at": "2026-06-13T10:00:00Z",
+    "raw_content": "token-zip is an experimental library for compressing code context before sending to LLMs. Uses AST parsing to identify key structures, then generates compressed representations. Alpha stage — API may change. Limited benchmarks show 2x compression but accuracy impact is not yet quantified. 23 stars.",
+    "expected_enrichment": {
+      "expected_category": "experimental",
+      "expected_relevance_range": [0.7, 1.0],
+      "expected_effectiveness_range": [0.15, 0.5],
+      "expected_tags_must_include": ["token-saving"],
+      "expected_tags_must_not_include": [],
+      "summary_must_mention": ["compression"]
+    }
+  },
+  {
+    "id": "f7a2b3c4d5e6f7a2b3c4d5e6f7a2b3c4d5e6f7a2b3c4d5e6f7a2b3c4d5e6f7a2",
+    "source": "github",
+    "title": "agent-memory-net - Neural Episodic Memory for Coding Agents",
+    "url": "https://github.com/example/agent-memory-net",
+    "description": "A research paper implementation providing neural episodic memory for AI coding agents. Allows agents to remember and retrieve past coding sessions. 15 stars, research prototype.",
+    "author": "ml-research-lab",
+    "metadata": {"stars": 15, "forks": 2, "language": "Python", "updated_at": "2026-05-20"},
+    "tags": ["memory", "neural", "research", "prototype"],
+    "scraped_at": "2026-06-13T10:00:00Z",
+    "raw_content": "Implementation of 'Neural Episodic Memory for Coding Agents' paper. Provides a vector-based memory store that allows coding agents to remember and retrieve context from past sessions. Prototype stage — requires fine-tuned embedding model. 15 stars, research prototype. Not production-ready.",
+    "expected_enrichment": {
+      "expected_category": "experimental",
+      "expected_relevance_range": [0.65, 1.0],
+      "expected_effectiveness_range": [0.1, 0.45],
+      "expected_tags_must_include": ["context-management"],
+      "expected_tags_must_not_include": ["budget-control"],
+      "summary_must_mention": ["memory"]
+    }
+  },
+  {
+    "id": "a3b4c5d6e7f8a3b4c5d6e7f8a3b4c5d6e7f8a3b4c5d6e7f8a3b4c5d6e7f8a3b4",
+    "source": "github",
+    "title": "context-share - Prototype Context Sharing Protocol Between AI Agents",
+    "url": "https://github.com/example/context-share",
+    "description": "An experimental protocol for sharing context between multiple AI coding agents working on the same project. Prototype stage, 8 stars.",
+    "author": "distributed-ai",
+    "metadata": {"stars": 8, "forks": 1, "language": "Python", "updated_at": "2026-05-30"},
+    "tags": ["context-sharing", "protocol", "multi-agent", "prototype"],
+    "scraped_at": "2026-06-13T10:00:00Z",
+    "raw_content": "context-share defines a protocol for multiple AI coding agents to share context without duplicating token usage. Each agent maintains a context manifest that others can query. Prototype implementation — not battle-tested, limited to 2 agents in current version. 8 stars.",
+    "expected_enrichment": {
+      "expected_category": "experimental",
+      "expected_relevance_range": [0.65, 1.0],
+      "expected_effectiveness_range": [0.1, 0.4],
+      "expected_tags_must_include": ["multi-agent", "context-management"],
+      "expected_tags_must_not_include": ["budget-control"],
+      "summary_must_mention": ["context", "sharing"]
+    }
+  },
+  {
+    "id": "b4c5d6e7f8a3b4c5d6e7f8a3b4c5d6e7f8a3b4c5d6e7f8a3b4c5d6e7f8a3b4c5",
+    "source": "github",
+    "title": "FastFlask - Lightning-Fast Python Web Framework",
+    "url": "https://github.com/example/fastflask",
+    "description": "A high-performance Python web framework inspired by Flask and FastAPI. Focus on speed and simplicity. 5200 stars. Not related to AI or coding agents.",
+    "author": "webdev-team",
+    "metadata": {"stars": 5200, "forks": 680, "language": "Python", "updated_at": "2026-05-01"},
+    "tags": ["web-framework", "python", "flask", "performance"],
+    "scraped_at": "2026-06-13T10:00:00Z",
+    "raw_content": "FastFlask is a high-performance Python web framework combining the simplicity of Flask with the speed of modern async frameworks. Features include automatic OpenAPI generation, dependency injection, and WebSocket support. Not related to AI agents or coding assistants.",
+    "expected_enrichment": {
+      "expected_category": "battle-tested",
+      "expected_relevance_range": [0.0, 0.25],
+      "expected_effectiveness_range": [0.0, 1.0],
+      "expected_tags_must_include": [],
+      "expected_tags_must_not_include": ["multi-agent", "prompting", "token-saving"],
+      "summary_must_mention": ["web framework"]
+    }
+  },
+  {
+    "id": "c5d6e7f8a3b4c5d6e7f8a3b4c5d6e7f8a3b4c5d6e7f8a3b4c5d6e7f8a3b4c5d6",
+    "source": "blog",
+    "title": "Grandma's Secret Sourdough Recipe — The Ultimate Guide",
+    "url": "https://recipeblog.example.com/sourdough-guide",
+    "description": "A detailed guide to making sourdough bread at home, including starter maintenance, hydration ratios, and baking techniques. Nothing to do with AI or coding.",
+    "author": "Chef Mario",
+    "metadata": {"blog_name": "RecipeBlog", "published_date": "2026-04-10"},
+    "tags": ["recipe", "bread", "sourdough", "baking"],
+    "scraped_at": "2026-06-13T10:00:00Z",
+    "raw_content": "Welcome to the ultimate sourdough guide! Start by feeding your starter with equal parts flour and water. Maintain at room temperature for 5-7 days. The ideal hydration ratio is 75%. Bake at 450F with steam for the first 20 minutes. This recipe has nothing to do with AI, coding, or technology.",
+    "expected_enrichment": {
+      "expected_category": "experimental",
+      "expected_relevance_range": [0.0, 0.1],
+      "expected_effectiveness_range": [0.0, 0.3],
+      "expected_tags_must_include": [],
+      "expected_tags_must_not_include": ["token-saving", "multi-agent", "prompting", "frameworks", "debugging", "workflow", "configuration", "cost-optimization", "context-management", "budget-control"],
+      "summary_must_mention": []
+    }
+  },
+  {
+    "id": "d6e7f8a3b4c5d6e7f8a3b4c5d6e7f8a3b4c5d6e7f8a3b4c5d6e7f8a3b4c5d6e7",
+    "source": "blog",
+    "title": "Building a 2D Platformer Game with Godot Engine — Complete Tutorial",
+    "url": "https://gamedev.example.com/godot-platformer",
+    "description": "Step-by-step tutorial for building a 2D platformer game using the Godot engine. Covers sprites, physics, level design, and sound effects.",
+    "author": "GameDevGuru",
+    "metadata": {"blog_name": "GameDev Daily", "published_date": "2026-03-22"},
+    "tags": ["godot", "gamedev", "tutorial", "2d-platformer"],
+    "scraped_at": "2026-06-13T10:00:00Z",
+    "raw_content": "In this tutorial, we'll build a complete 2D platformer game using Godot 4.2. We'll cover character controllers, tile maps, enemy AI, and collectibles. No AI coding agents or LLMs involved — this is pure game development with GDScript.",
+    "expected_enrichment": {
+      "expected_category": "battle-tested",
+      "expected_relevance_range": [0.0, 0.15],
+      "expected_effectiveness_range": [0.0, 1.0],
+      "expected_tags_must_include": [],
+      "expected_tags_must_not_include": ["token-saving", "multi-agent", "prompting", "context-management"],
+      "summary_must_mention": ["game"]
+    }
+  },
+  {
+    "id": "e7f8a3b4c5d6e7f8a3b4c5d6e7f8a3b4c5d6e7f8a3b4c5d6e7f8a3b4c5d6e7f8",
+    "source": "github",
+    "title": "CryptoTraderBot - Automated Cryptocurrency Trading Bot",
+    "url": "https://github.com/example/cryptotraderbot",
+    "description": "An automated cryptocurrency trading bot using technical analysis indicators. Supports Binance and Coinbase APIs. 1800 stars.",
+    "author": "crypto-dev",
+    "metadata": {"stars": 1800, "forks": 420, "language": "Python", "updated_at": "2026-04-15"},
+    "tags": ["crypto", "trading", "bot", "automation"],
+    "scraped_at": "2026-06-13T10:00:00Z",
+    "raw_content": "CryptoTraderBot automates cryptocurrency trading using RSI, MACD, and Bollinger Bands. Connects to Binance and Coinbase APIs. Supports backtesting, paper trading, and live execution. Uses AI for price prediction but has nothing to do with coding agents or developer workflows.",
+    "expected_enrichment": {
+      "expected_category": "battle-tested",
+      "expected_relevance_range": [0.0, 0.2],
+      "expected_effectiveness_range": [0.0, 1.0],
+      "expected_tags_must_include": [],
+      "expected_tags_must_not_include": ["multi-agent", "prompting", "context-management", "token-saving"],
+      "summary_must_mention": ["trading"]
+    }
+  },
+  {
+    "id": "f8a3b4c5d6e7f8a3b4c5d6e7f8a3b4c5d6e7f8a3b4c5d6e7f8a3b4c5d6e7f8a3",
+    "source": "github",
+    "title": "awesome-machine-learning - General Machine Learning Resource Collection",
+    "url": "https://github.com/example/awesome-ml-general",
+    "description": "A general-purpose awesome list of machine learning resources. Covers supervised learning, NLP, computer vision, and deployment. Not specifically focused on agentic AI coding.",
+    "author": "ml-community",
+    "metadata": {"stars": 12000, "forks": 2800, "language": "Markdown", "updated_at": "2026-05-10"},
+    "tags": ["awesome-list", "machine-learning", "resources", "general"],
+    "scraped_at": "2026-06-13T10:00:00Z",
+    "raw_content": "A curated list of machine learning resources including tutorials, papers, and tools. Covers supervised learning, unsupervised learning, reinforcement learning, NLP, computer vision, and ML deployment. General-purpose — not specifically about AI coding agents, agentic workflows, or developer tooling.",
+    "expected_enrichment": {
+      "expected_category": "battle-tested",
+      "expected_relevance_range": [0.1, 0.35],
+      "expected_effectiveness_range": [0.0, 1.0],
+      "expected_tags_must_include": [],
+      "expected_tags_must_not_include": ["multi-agent", "prompting", "debugging"],
+      "summary_must_mention": ["machine learning"]
+    }
+  }
+]
