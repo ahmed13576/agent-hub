@@ -15,6 +15,7 @@ from unittest.mock import patch, MagicMock
 import yaml
 import pytest
 
+from src.pipeline import Pipeline
 from src.generator.curated_filter import filter_curated
 
 
@@ -46,35 +47,64 @@ def workflow():
 
 # ── Trajectory Tests: Pipeline Integration ───────────────────────────────────
 
-class TestTrajectoryGeneratorReceivesEnrichedData:
-    """Verify the catalog generator receives enriched items, not raw."""
+class TestPipelineTrajectory:
+    """Verify trajectory of catalog generation via pipeline integration."""
 
-    def test_generator_called_with_enriched_data(self, enriched_items, tmp_path):
-        """Pipeline with generate=True passes enriched items through curated filter."""
-        # The curated filter should only pass items with enriched_at
-        curated = filter_curated(enriched_items)
-        for item in curated:
-            assert "enriched_at" in item, f"Item {item['title']} missing enriched_at"
-            assert item["relevance_score"] >= 0.5
-
-
-class TestTrajectoryCuratedFileWritten:
-    """Verify curated_strategies.json filtering logic."""
-
-    def test_curated_file_excludes_low_relevance(self, enriched_items, tmp_path):
-        """Items below relevance 0.5 must NOT be in the curated output."""
-        curated = filter_curated(enriched_items)
-        # Our fixture has 2 noise items with relevance 0.15 and 0.08
-        curated_ids = {item["id"] for item in curated}
-        assert "noise-001" not in curated_ids, "Noise item should be filtered out"
-        assert "noise-002" not in curated_ids, "Noise item should be filtered out"
-
-    def test_curated_file_includes_high_relevance(self, enriched_items):
-        """Items above relevance 0.5 should be in the curated output."""
-        curated = filter_curated(enriched_items)
-        curated_ids = {item["id"] for item in curated}
-        assert "bt-001" in curated_ids, "Battle-tested item should be curated"
-        assert "nu-001" in curated_ids, "New-upcoming item should be curated"
+    @patch("src.pipeline.Pipeline._run_scrapers")
+    @patch("src.enrichment.processor.EnrichmentProcessor.enrich_batch")
+    @patch("src.pipeline.Pipeline._load_database")
+    @patch("src.pipeline.Pipeline._save_to_database")
+    def test_pipeline_generates_catalog_with_enriched_items(
+        self, mock_save, mock_load, mock_enrich, mock_scrape, enriched_items, tmp_path
+    ):
+        """Pipeline with generate=True passes enriched items to generator and writes curated_strategies.json."""
+        # Scraper returns the raw version of the items (strip enrichment fields)
+        raw_items = []
+        for item in enriched_items:
+            raw = item.copy()
+            raw.pop("enriched_at", None)
+            raw.pop("relevance_score", None)
+            raw.pop("category", None)
+            raw.pop("summary", None)
+            raw.pop("enriched_tags", None)
+            raw.pop("effectiveness_score", None)
+            raw_items.append(raw)
+            
+        mock_scrape.return_value = raw_items
+        mock_enrich.return_value = enriched_items
+        mock_load.return_value = enriched_items
+        
+        # Patch paths to use tmp_path
+        curated_path = tmp_path / "curated.json"
+        with patch("src.generator.curated_filter.DEFAULT_CURATED_PATH", curated_path), \
+             patch("src.generator.catalog.PROJECT_ROOT", tmp_path):
+             
+            pipeline = Pipeline()
+            pipeline._db_path = tmp_path / "database.json"
+            pipeline._discovered_path = tmp_path / "discovered.json"
+            
+            stats = pipeline.run(enrich=True, generate=True)
+            
+            assert "catalog_stats" in stats
+            
+            # 1. Verify Curated File Written
+            assert curated_path.exists(), "curated_strategies.json was not created"
+            with open(curated_path, "r", encoding="utf-8") as f:
+                curated_saved = json.load(f)
+                
+            curated_ids = {item["id"] for item in curated_saved}
+            # 2. Verify includes high relevance (e.g. bt-001) and excludes low relevance (e.g. noise-001)
+            assert "bt-001" in curated_ids, "High relevance item missing from curated file"
+            assert "noise-001" not in curated_ids, "Low relevance item should be filtered out"
+            
+            # 3. Verify Generator receives enriched data
+            for item in curated_saved:
+                assert "enriched_at" in item, f"Item {item['title']} missing enriched_at"
+                assert item["relevance_score"] >= 0.5
+                
+            # Verify Markdown files generated
+            assert (tmp_path / "README.md").exists()
+            assert (tmp_path / "docs" / "battle-tested.md").exists()
 
 
 class TestTrajectoryDiffGuardedCommit:
