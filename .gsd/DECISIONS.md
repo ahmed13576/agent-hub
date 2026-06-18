@@ -84,3 +84,67 @@ One API call per item with a single prompt that asks for all fields as a JSON ob
 - Deterministic pipeline logic has full test coverage
 - LLM output quality is tracked over time via versioned eval results
 - API costs for evals are controlled by running them on a separate schedule
+
+---
+
+## ADR-004: Phase 4 — Git-Backed Automation & Markdown Generation
+
+**Date:** 2026-06-18
+**Status:** Accepted
+
+### Context
+Phase 4 is the final phase: generate Markdown catalogs from enriched data and wire up a GitHub Actions
+workflow that runs the full pipeline on a schedule and commits results back to the repo.
+
+### Decision: Output Files
+- `data/database.json` — raw scraper output (unchanged name, already exists)
+- `data/curated_strategies.json` — enriched items with `relevance_score ≥ 0.5` only
+- `README.md` — root catalog (auto-generated, human-readable)
+- `docs/battle-tested.md`, `docs/new-upcoming.md`, `docs/experimental.md` — per-category files
+
+### Decision: Markdown Format — Rich Table Style
+Each category file uses a rich table layout:
+- Columns: Title (linked), Source, Category, Relevance, Effectiveness, Tags, Summary
+- Sorted by `relevance_score` descending within each file
+- Root README.md contains top-10 items per category + links to full docs
+
+### Decision: Curated Threshold
+`relevance_score ≥ 0.5` → appears in `curated_strategies.json` and all markdown files.
+Below 0.5 → stored in `database.json` only (available for future use, not surfaced).
+
+### Decision: GitHub Actions Schedule
+- **Cron:** Every 5 days (`0 2 */5 * *`) — saves GitHub Actions minutes vs. 48h
+- **Manual trigger:** `workflow_dispatch` always enabled for ad-hoc runs
+- **No push trigger** — pipeline is data-driven, not code-driven
+
+### Decision: Git Commit Strategy — Diff-Guarded
+- After generating all output files, check `git diff --quiet`
+- Only commit + push if diff is non-empty
+- Commit message format: `chore(data): auto-update catalog [YYYY-MM-DD] — N new items`
+- Uses `GITHUB_TOKEN` with `contents: write` permission (no PAT needed)
+
+### Decision: Groq API Key in Actions
+- `GROQ_API_KEY` stored as a GitHub Actions secret
+- Workflow fails gracefully (skips enrichment, still commits raw data) if key is absent
+- Failure mode: log warning, set `ENRICH=false`, continue with scrape-only run
+
+### Decision: Golden Evals — Manual-Only
+- No second cron job for golden evals — keep fully manual via `workflow_dispatch` with `eval: true` input
+- The workflow accepts an optional `run_eval` boolean input for one-click eval runs
+- Easy to promote to a cron later by adding a second `on.schedule` block
+
+### Decision: EDD for Phase 4
+- Wave 1: Define "correct" — markdown snapshot fixtures, generator schema, trajectory stubs
+- Wave 2: Build generator + CI workflow + unskip trajectory tests
+- Deterministic tests: snapshot diffs, sort order, empty-category edge cases, diff-guard logic
+- Trajectory tests: assert commit only runs on non-empty diff, assert correct CLI flags in workflow
+
+### Risks & Mitigations
+| Risk | Mitigation |
+|------|------------|
+| No GROQ_API_KEY in Actions | Graceful fallback: scrape-only run, warn in logs |
+| git push requires write access | Use `GITHUB_TOKEN` with `contents: write` |
+| Special chars in titles break markdown | Sanitize in generator (escape pipes, backticks) |
+| Cron disabled on inactive repos | `workflow_dispatch` always available as fallback |
+| First run commits very large diff | Expected — not a problem for GitHub |
+
