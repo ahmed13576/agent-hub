@@ -1,9 +1,9 @@
 # STATE.md
 
 ## Current Position
-- **Phase**: 3 (verified ✅)
-- **Task**: Preparing for Phase 4
-- **Status**: Paused at 2026-06-18T22:25 IST
+- **Phase**: 4 (planned)
+- **Task**: Planning complete — ready for execution
+- **Status**: Active (resumed 2026-06-18T22:27 IST)
 
 ## Last Session Summary
 Executed and verified Phase 3 (AI Processing & Categorization) using Evaluation-Driven Development (EDD).
@@ -29,5 +29,5 @@ None. Ready to begin Phase 4.
 - **EDD Strategy:** Golden evals run separately via `--eval` flag to save API credits, while 38 unit/trajectory tests verify logic continuously.
 
 ## Next Steps
-1. `/plan 4` — Decompose Phase 4 (Git-Backed Automation & Markdown Generation) into executable waves.
-2. `/execute 4` — Execute the plans.
+1. `/execute 4` — Execute Phase 4 plans (Wave 1: EDD foundation, Wave 2: integration + CI)
+2. `/verify 4` — Verify Phase 4 after execution
