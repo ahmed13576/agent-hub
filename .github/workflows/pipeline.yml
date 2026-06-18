@@ -1,0 +1,81 @@
+name: Agent Hub Pipeline
+
+on:
+  schedule:
+    - cron: '0 2 */5 * *'  # Every 5 days at 02:00 UTC
+  workflow_dispatch:
+    inputs:
+      run_eval:
+        description: 'Run golden dataset evaluation'
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: write  # Required for git push
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Full history for diff
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Check for GROQ_API_KEY
+        id: check_groq
+        run: |
+          if [ -n "${{ secrets.GROQ_API_KEY }}" ]; then
+            echo "has_key=true" >> $GITHUB_OUTPUT
+            echo "✅ GROQ_API_KEY found"
+          else
+            echo "has_key=false" >> $GITHUB_OUTPUT
+            echo "⚠️ GROQ_API_KEY not set — running scrape-only"
+          fi
+
+      - name: Run pipeline (with enrichment)
+        if: steps.check_groq.outputs.has_key == 'true'
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python -m src.main --enrich --generate
+
+      - name: Run pipeline (scrape only — no API key)
+        if: steps.check_groq.outputs.has_key != 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python -m src.main --generate
+
+      - name: Run golden evaluation
+        if: inputs.run_eval == true && steps.check_groq.outputs.has_key == 'true'
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: python -m src.main --eval
+
+      - name: Check for changes
+        id: diff
+        run: |
+          git diff --quiet && echo "changed=false" >> $GITHUB_OUTPUT || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push changes
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          NEW_COUNT=$(python -c "import json; d=json.load(open('data/database.json')); print(len(d))" 2>/dev/null || echo "?")
+          DATE=$(date -u +%Y-%m-%d)
+          git add -A
+          git commit -m "chore(data): auto-update catalog [$DATE] — $NEW_COUNT items in DB"
+          git push
