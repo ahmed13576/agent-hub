@@ -30,7 +30,6 @@ github:
 reddit:
   # Subreddits to scrape via RSS
   subreddits:
-    - "ClaudeDev"
     - "LocalLLaMA"
     - "ChatGPTCoding"
     - "MachineLearning"
@@ -66,8 +65,8 @@ blogs:
       name: "Towards Data Science - Agents"
     - url: "https://analyticsindiamag.com/feed/"
       name: "Analytics India Magazine"
-    - url: "https://www.anthropic.com/blog/rss"
-      name: "Anthropic Blog"
+    - url: "https://www.anthropic.com/research/rss.xml"
+      name: "Anthropic Research"
     - url: "https://openai.com/blog/rss.xml"
       name: "OpenAI Blog"
     - url: "https://blog.google/technology/ai/rss/"
