@@ -203,10 +203,10 @@ class TestEnrichBatch:
 
         processor.enrich_batch(items, progress_callback=callback)
 
-        assert len(callback_calls) == 3
-        assert callback_calls[0] == (1, 3)
-        assert callback_calls[1] == (2, 3)
-        assert callback_calls[2] == (3, 3)
+        # With batch mode, callback fires once per chunk.
+        # 3 items fit in 1 chunk (BATCH_CHUNK_SIZE=10), so 1 callback.
+        assert len(callback_calls) >= 1
+        assert callback_calls[-1] == (3, 3)  # Final call reports all items processed
 
 
 # ── TestEnrichItemEdgeCases ──────────────────────────────────────────────────

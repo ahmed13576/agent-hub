@@ -10,9 +10,11 @@ Design constraints:
 - All LLM output is validated before merge
 - Already-enriched items are skipped (no duplicate API calls)
 - Scores are clamped, categories normalized, invalid tags filtered (repair mode)
+- Batch mode sends multiple items per API call to minimize rate-limit pressure
 - Fully testable with mocked GroqClient
 """
 
+import json
 import logging
 from typing import Optional, Callable
 
@@ -27,10 +29,18 @@ from src.enrichment.schema import (
 from src.enrichment.prompts import (
     SYSTEM_PROMPT,
     build_prompt,
+    build_batch_prompt,
     get_prompt_version,
 )
 
 logger = logging.getLogger(__name__)
+
+# Number of items to send per LLM call in batch mode.
+# Kept at 5 to stay under Groq's 15K TPM limit for llama-3.3-70b.
+BATCH_CHUNK_SIZE = 5
+
+# Save a checkpoint to the database every N chunks
+CHECKPOINT_INTERVAL = 5  # every 5 chunks = ~25 items
 
 
 class EnrichmentProcessor:
@@ -135,19 +145,109 @@ class EnrichmentProcessor:
             failed_item["enrichment_error"] = str(e)
             return failed_item
 
+    def _enrich_chunk(self, chunk: list[dict]) -> list[dict]:
+        """
+        Enrich a chunk of items via a single batch LLM call.
+
+        Sends multiple items in one prompt and expects a JSON array back.
+        Falls back to single-item enrichment if the batch response can't be parsed.
+
+        Args:
+            chunk: List of up to BATCH_CHUNK_SIZE unenriched items.
+
+        Returns:
+            List of enriched items (or originals with error on failure).
+        """
+        try:
+            # Build batch prompt
+            user_message = build_batch_prompt(chunk)
+
+            # Call LLM — expecting a JSON array
+            raw_response = self._groq.chat(
+                user_message=user_message,
+                system_prompt=SYSTEM_PROMPT,
+                temperature=0.2,
+                max_tokens=4096,
+            )
+
+            # Parse the JSON array response
+            results = self._extract_json_array(raw_response)
+
+            if not isinstance(results, list):
+                raise ValueError(f"Expected JSON array, got {type(results).__name__}")
+
+            # Build a lookup by ID for matching results back to items
+            results_by_id = {}
+            for r in results:
+                if isinstance(r, dict) and "id" in r:
+                    results_by_id[r["id"]] = r
+
+            # Match results to items and merge
+            enriched_items = []
+            model_used = getattr(self._groq, "model", "unknown")
+            version = get_prompt_version()
+
+            for item in chunk:
+                item_id = item.get("id", "")
+                result = results_by_id.get(item_id)
+
+                if result is None:
+                    # Result not found for this item — fall back to single enrichment
+                    logger.warning(
+                        f"Batch response missing result for '{item.get('title', '?')}' "
+                        f"(id={item_id}). Falling back to single enrichment."
+                    )
+                    enriched_items.append(self.enrich_item(item))
+                    continue
+
+                # Repair and validate
+                result = self._repair_result(result)
+                is_valid, errors = validate_enrichment(result)
+
+                if not is_valid:
+                    result = self._deep_repair(result)
+                    is_valid, errors = validate_enrichment(result)
+
+                if not is_valid:
+                    logger.warning(
+                        f"Batch enrichment validation failed for '{item.get('title', '?')}': {errors}"
+                    )
+                    self.failed_count += 1
+                    failed_item = dict(item)
+                    failed_item["enrichment_error"] = "; ".join(errors)
+                    enriched_items.append(failed_item)
+                    continue
+
+                merged = merge_enrichment(item, result, model_used=model_used, enrichment_version=version)
+                self.enriched_count += 1
+                enriched_items.append(merged)
+
+            return enriched_items
+
+        except Exception as e:
+            logger.warning(
+                f"Batch enrichment failed ({e}). Falling back to single-item mode for {len(chunk)} items."
+            )
+            # Fall back to single-item enrichment for each item in the chunk
+            return [self.enrich_item(item) for item in chunk]
+
     def enrich_batch(
         self,
         items: list[dict],
         progress_callback: Optional[Callable[[int, int], None]] = None,
+        checkpoint_callback: Optional[Callable[[list[dict]], None]] = None,
     ) -> list[dict]:
         """
-        Enrich a batch of scraped items.
+        Enrich a batch of scraped items using chunked batch LLM calls.
 
-        Never crashes on individual item failure — always processes the full batch.
+        Sends items in chunks of BATCH_CHUNK_SIZE per API call to minimize
+        rate-limit pressure. Never crashes on individual item failure.
+        Saves checkpoints periodically via checkpoint_callback.
 
         Args:
             items: List of scraped item dicts.
             progress_callback: Optional callback(current_index, total) for progress.
+            checkpoint_callback: Optional callback(enriched_so_far) to save progress.
 
         Returns:
             List of all items (enriched or original with error).
@@ -155,22 +255,54 @@ class EnrichmentProcessor:
         results = []
         total = len(items)
 
-        logger.info(f"Starting batch enrichment: {total} items")
+        # Separate already-enriched items from unenriched
+        to_enrich = []
+        for item in items:
+            if "enriched_at" in item:
+                self.skipped_count += 1
+                results.append(item)
+            else:
+                to_enrich.append(item)
 
-        for i, item in enumerate(items):
-            try:
-                enriched = self.enrich_item(item)
-                results.append(enriched)
-            except Exception as e:
-                # This should never happen (enrich_item catches all), but just in case
-                logger.error(f"Unexpected batch error on item {i}: {e}")
-                self.failed_count += 1
-                failed_item = dict(item)
-                failed_item["enrichment_error"] = f"Batch error: {e}"
-                results.append(failed_item)
+        total_chunks = (len(to_enrich) + BATCH_CHUNK_SIZE - 1) // BATCH_CHUNK_SIZE if to_enrich else 0
 
+        logger.info(
+            f"Starting batch enrichment: {len(to_enrich)} items to enrich "
+            f"({self.skipped_count} already enriched, skipping). "
+            f"Chunk size: {BATCH_CHUNK_SIZE} → ~{total_chunks} API calls."
+        )
+
+        # Process in chunks
+        processed = 0
+        enriched_new_items = []  # Track enriched items for checkpoint saves
+
+        for i in range(0, len(to_enrich), BATCH_CHUNK_SIZE):
+            chunk = to_enrich[i : i + BATCH_CHUNK_SIZE]
+            chunk_num = (i // BATCH_CHUNK_SIZE) + 1
+
+            logger.info(f"Processing chunk {chunk_num}/{total_chunks} ({len(chunk)} items)...")
+
+            enriched_chunk = self._enrich_chunk(chunk)
+            results.extend(enriched_chunk)
+            enriched_new_items.extend(enriched_chunk)
+
+            processed += len(chunk)
             if progress_callback:
-                progress_callback(i + 1, total)
+                progress_callback(processed, len(to_enrich))
+
+            # Checkpoint save every CHECKPOINT_INTERVAL chunks
+            if checkpoint_callback and chunk_num % CHECKPOINT_INTERVAL == 0:
+                checkpoint_callback(enriched_new_items)
+
+            # Inter-chunk cooldown to let Groq rate limits recover
+            if i + BATCH_CHUNK_SIZE < len(to_enrich):
+                import time
+                logger.debug("Inter-chunk cooldown: 3s...")
+                time.sleep(3)
+
+        # Final checkpoint save (catch anything after last interval)
+        if checkpoint_callback and enriched_new_items:
+            checkpoint_callback(enriched_new_items)
 
         logger.info(
             f"Batch enrichment complete: "
@@ -187,6 +319,29 @@ class EnrichmentProcessor:
             "skipped": self.skipped_count,
             "failed": self.failed_count,
         }
+
+    @staticmethod
+    def _extract_json_array(text: str) -> list:
+        """
+        Extract a JSON array from a response that may contain markdown code fences.
+
+        Handles responses like:
+            ```json
+            [{"id": "...", ...}, ...]
+            ```
+        """
+        cleaned = text.strip()
+
+        # Strip markdown code fences if present
+        if cleaned.startswith("```"):
+            lines = cleaned.split("\n")
+            lines = [line for line in lines if not line.strip().startswith("```")]
+            cleaned = "\n".join(lines).strip()
+
+        result = json.loads(cleaned)
+        if not isinstance(result, list):
+            raise ValueError(f"Expected JSON array, got {type(result).__name__}")
+        return result
 
     @staticmethod
     def _repair_result(result: dict) -> dict:

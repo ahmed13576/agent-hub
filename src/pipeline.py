@@ -82,6 +82,9 @@ class Pipeline:
         """
         Execute the full pipeline.
 
+        Saves scraped items immediately after deduplication, and checkpoints
+        enrichment progress periodically so partial progress is never lost.
+
         Returns:
             Stats dict with keys: new_items, duplicates_skipped,
             domains_discovered, total_in_db, errors, and
@@ -113,26 +116,48 @@ class Pipeline:
             f"({stats['duplicates_skipped']} duplicates skipped)"
         )
 
-        # Step 3: Enrich (optional)
+        # Step 3: Save scraped items IMMEDIATELY (before enrichment)
+        # This prevents losing scraped data if enrichment crashes.
+        if new_items:
+            self._save_to_database(new_items)
+            logger.info(f"PIPELINE: Saved {len(new_items)} scraped items to database (pre-enrichment checkpoint)")
+
+        # Step 4: Enrich (optional) — with checkpoint saves
         if enrich and new_items:
             from src.enrichment.processor import EnrichmentProcessor
+
+            # Reload the full database so enrichment can skip already-enriched items
+            db = self._load_database()
+
             processor = EnrichmentProcessor()
-            new_items = processor.enrich_batch(
+
+            # Checkpoint callback: saves enriched items back to DB periodically
+            def checkpoint_callback(enriched_so_far: list[dict]):
+                self._overwrite_database(db[:len(db) - len(new_items)] + enriched_so_far)
+                logger.info(
+                    f"PIPELINE: Checkpoint saved — "
+                    f"{processor.enriched_count} enriched, "
+                    f"{processor.failed_count} failed so far"
+                )
+
+            enriched_items = processor.enrich_batch(
                 new_items,
                 progress_callback=lambda i, t: logger.info(f"Enriching: {i}/{t}"),
+                checkpoint_callback=checkpoint_callback,
             )
+
+            # Final save: overwrite the new_items portion of the DB with enriched versions
+            existing_items = db[:len(db) - len(new_items)]
+            self._overwrite_database(existing_items + enriched_items)
+
             stats["enrichment_stats"] = processor.get_stats()
             logger.info(f"PIPELINE: Enrichment complete — {processor.get_stats()}")
 
-        # Step 4: Discover new sources
+        # Step 5: Discover new sources
         if new_items:
             discovered_count = self._discover_sources(new_items)
             stats["domains_discovered"] = discovered_count
             logger.info(f"PIPELINE: {discovered_count} new domains discovered")
-
-        # Step 5: Save to database
-        if new_items:
-            self._save_to_database(new_items)
 
         # Step 6: Final count
         db = self._load_database()
@@ -290,6 +315,21 @@ class Pipeline:
         with open(self._db_path, "w", encoding="utf-8") as f:
             json.dump(db, f, indent=2, ensure_ascii=False)
         logger.info(f"Database updated: {len(db)} total items")
+
+    def _overwrite_database(self, items: list[dict]):
+        """
+        Overwrite the entire database with the given items.
+
+        Used for checkpoint saves during enrichment, where we need to
+        replace the raw items with their enriched versions.
+
+        Args:
+            items: Complete list of items to write.
+        """
+        self._db_path.parent.mkdir(parents=True, exist_ok=True)
+        with open(self._db_path, "w", encoding="utf-8") as f:
+            json.dump(items, f, indent=2, ensure_ascii=False)
+        logger.info(f"Database checkpoint: {len(items)} total items")
 
     def _load_database(self) -> list[dict]:
         """Load the database JSON file."""

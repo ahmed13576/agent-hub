@@ -22,12 +22,14 @@ from src.config import config
 
 logger = logging.getLogger(__name__)
 
-# Minimum delay between requests (seconds) to stay under RPM limits
-MIN_REQUEST_INTERVAL = 60.0 / max(config.groq_max_rpm, 1)
+# Minimum delay between requests (seconds) to stay under RPM and TPM limits.
+# Groq free tier: 30 RPM, 15K TPM for 70B models. Batch prompts are large,
+# so we throttle to ~10 effective RPM to avoid hitting TPM ceiling.
+MIN_REQUEST_INTERVAL = 6.0
 
-# Retry settings
-MAX_RETRIES = 5
-INITIAL_BACKOFF = 2.0  # seconds
+# Retry settings — Groq 429s need longer cooldowns than typical APIs
+MAX_RETRIES = 7
+INITIAL_BACKOFF = 10.0  # seconds
 MAX_BACKOFF = 120.0  # seconds
 
 
