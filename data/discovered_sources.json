@@ -1,1 +1,206 @@
-{}
+{
+  "bahama.ai": {
+    "first_seen": "2026-06-21T06:54:09.717006+00:00",
+    "mention_count": 2,
+    "sample_urls": [
+      "https://bahama.ai"
+    ]
+  },
+  "nnname": {
+    "first_seen": "2026-06-21T06:54:09.717099+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "http://Nnname"
+    ]
+  },
+  "nnname.me": {
+    "first_seen": "2026-06-21T06:54:09.717116+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "http://Nnname.me"
+    ]
+  },
+  "momentumhive.app": {
+    "first_seen": "2026-06-21T06:54:09.717137+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://momentumhive.app"
+    ]
+  },
+  "backstat.net": {
+    "first_seen": "2026-06-21T06:54:09.717150+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://backstat.net"
+    ]
+  },
+  "indiestack.ai": {
+    "first_seen": "2026-06-21T06:54:09.717188+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://indiestack.ai/api/validate?name=loadash&amp"
+    ]
+  },
+  "jaydenteoh.github.io": {
+    "first_seen": "2026-06-21T06:54:09.717360+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://jaydenteoh.github.io/blog/2026/nextlat"
+    ]
+  },
+  "arxiv.org": {
+    "first_seen": "2026-06-21T06:54:09.717379+00:00",
+    "mention_count": 2,
+    "sample_urls": [
+      "https://arxiv.org/abs/2511.05963",
+      "https://arxiv.org/pdf/2212.09561"
+    ]
+  },
+  "preview.redd.it": {
+    "first_seen": "2026-06-21T06:54:09.717407+00:00",
+    "mention_count": 7,
+    "sample_urls": [
+      "https://preview.redd.it/dm4nh4t71o7h1.png?width=3082&amp",
+      "https://preview.redd.it/8n3fvpcr578h1.png?width=1119&amp",
+      "https://preview.redd.it/34yiqpcr578h1.png?width=1119&amp",
+      "https://preview.redd.it/xi8ctqcr578h1.png?width=1119&amp",
+      "https://preview.redd.it/9mkbkrcr578h1.png?width=1119&amp"
+    ]
+  },
+  "paperswithcode.co": {
+    "first_seen": "2026-06-21T06:54:09.717421+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://paperswithcode.co/methods/speculative-decoding"
+    ]
+  },
+  "lmsys.org": {
+    "first_seen": "2026-06-21T06:54:09.717432+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://www.lmsys.org/blog/2026-06-15-next-generation-speculative-decoding-dflash-v2/"
+    ]
+  },
+  "forum.cursor.com": {
+    "first_seen": "2026-06-21T06:54:09.717722+00:00",
+    "mention_count": 2,
+    "sample_urls": [
+      "https://forum.cursor.com/t/review-panel-doesnt-dismiss-rendering-it-useless-reproduced-by-another-user-too/163722"
+    ]
+  },
+  "bbc.com": {
+    "first_seen": "2026-06-21T06:54:09.718031+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://www.bbc.com/news/articles/c5yv5976z9po"
+    ]
+  },
+  "cnbc.com": {
+    "first_seen": "2026-06-21T06:54:09.718042+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://www.cnbc.com/2025/01/27/nvidia-sheds-almost-600-billion-in-market-cap-biggest-drop-ever.html"
+    ]
+  },
+  "hbr.org": {
+    "first_seen": "2026-06-21T06:54:09.718059+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://hbr.org/2023/06/the-ai-hype-cycle-is-distracting-companies"
+    ]
+  },
+  "theverge.com": {
+    "first_seen": "2026-06-21T06:54:09.718069+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://www.theverge.com/2025/1/16/24345051/microsoft-365-personal-family-copilot-office-ai-price-rises"
+    ]
+  },
+  "reuters.com": {
+    "first_seen": "2026-06-21T06:54:09.718079+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://www.reuters.com/technology/artificial-intelligence/openai-talks-investment-round-valuing-it-up-340-billion-wsj-reports-2025-01-30/"
+    ]
+  },
+  "cnn.com": {
+    "first_seen": "2026-06-21T06:54:09.718089+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://www.cnn.com/2025/01/21/tech/openai-oracle-softbank-trump-ai-investment/index.html"
+    ]
+  },
+  "washingtonpost.com": {
+    "first_seen": "2026-06-21T06:54:09.718099+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://www.washingtonpost.com/technology/2024/07/24/ai-bubble-big-tech-stocks-goldman-sachs/"
+    ]
+  },
+  "wheresyoured.at": {
+    "first_seen": "2026-06-21T06:54:09.718108+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://www.wheresyoured.at/oai-business/"
+    ]
+  },
+  "trustbit.tech": {
+    "first_seen": "2026-06-21T06:54:09.719104+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://www.trustbit.tech/en/wie-wir-mit-knowledge-maps-bessere-rag-systeme-bauen"
+    ]
+  },
+  "webmd.com": {
+    "first_seen": "2026-06-21T06:54:09.719600+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://www.webmd.com/food-recipes/what-is-stevia"
+    ]
+  },
+  "health.clevelandclinic.org": {
+    "first_seen": "2026-06-21T06:54:09.719613+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://health.clevelandclinic.org/what-is-stevia"
+    ]
+  },
+  "tastingtable.com": {
+    "first_seen": "2026-06-21T06:54:09.719627+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://www.tastingtable.com/1616127/poisonous-pufferfish-explained/"
+    ]
+  },
+  "safeharborfishing.com": {
+    "first_seen": "2026-06-21T06:54:09.719633+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://safeharborfishing.com/are-puffer-fish-poisonous-to-touch-heres-what-you-need-to-know/"
+    ]
+  },
+  "localhost:8000": {
+    "first_seen": "2026-06-21T06:54:09.720227+00:00",
+    "mention_count": 4,
+    "sample_urls": [
+      "http://localhost:8000"
+    ]
+  },
+  "127.0.0.1:8000": {
+    "first_seen": "2026-06-21T06:54:09.720240+00:00",
+    "mention_count": 5,
+    "sample_urls": [
+      "http://127.0.0.1:8000",
+      "http://127.0.0.1:8000/?hub.mode=subscribe&amp",
+      "http://127.0.0.1:8000/health",
+      "http://127.0.0.1:8000/readiness"
+    ]
+  },
+  "&lt": {
+    "first_seen": "2026-06-21T06:54:09.720274+00:00",
+    "mention_count": 2,
+    "sample_urls": [
+      "https://&lt"
+    ]
+  }
+}
