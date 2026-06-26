@@ -58,7 +58,7 @@
   },
   "preview.redd.it": {
     "first_seen": "2026-06-21T06:54:09.717407+00:00",
-    "mention_count": 7,
+    "mention_count": 17,
     "sample_urls": [
       "https://preview.redd.it/dm4nh4t71o7h1.png?width=3082&amp",
       "https://preview.redd.it/8n3fvpcr578h1.png?width=1119&amp",
@@ -69,9 +69,13 @@
   },
   "paperswithcode.co": {
     "first_seen": "2026-06-21T06:54:09.717421+00:00",
-    "mention_count": 1,
+    "mention_count": 7,
     "sample_urls": [
-      "https://paperswithcode.co/methods/speculative-decoding"
+      "https://paperswithcode.co/methods/speculative-decoding",
+      "https://paperswithcode.co/tasks/ocr",
+      "https://paperswithcode.co/tasks/video-classification",
+      "https://paperswithcode.co/paper/98456#results?task=agents",
+      "https://paperswithcode.co/paper/85629#results?task=reasoning"
     ]
   },
   "lmsys.org": {
@@ -201,6 +205,48 @@
     "mention_count": 2,
     "sample_urls": [
       "https://&lt"
+    ]
+  },
+  "batonbot.io": {
+    "first_seen": "2026-06-26T06:14:07.263323+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://batonbot.io"
+    ]
+  },
+  "hyfl.uk": {
+    "first_seen": "2026-06-26T06:14:07.263412+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://hyfl.uk"
+    ]
+  },
+  "huggingface.co": {
+    "first_seen": "2026-06-26T06:14:07.263565+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://huggingface.co/roneneldan/TinyStories-33M"
+    ]
+  },
+  "kam.mff.cuni.cz": {
+    "first_seen": "2026-06-26T06:14:07.263600+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://kam.mff.cuni.cz/~straka/blog/generals.html"
+    ]
+  },
+  "chess-analysis-mcp.github.io": {
+    "first_seen": "2026-06-26T06:14:07.263907+00:00",
+    "mention_count": 2,
+    "sample_urls": [
+      "https://chess-analysis-mcp.github.io/tintins-chess-analysis/"
+    ]
+  },
+  "cursor.directory": {
+    "first_seen": "2026-06-26T06:14:07.264177+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://cursor.directory/plugins/awesome-cursor-rules-2026"
     ]
   }
 }
