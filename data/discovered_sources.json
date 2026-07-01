@@ -50,15 +50,16 @@
   },
   "arxiv.org": {
     "first_seen": "2026-06-21T06:54:09.717379+00:00",
-    "mention_count": 2,
+    "mention_count": 4,
     "sample_urls": [
       "https://arxiv.org/abs/2511.05963",
-      "https://arxiv.org/pdf/2212.09561"
+      "https://arxiv.org/pdf/2212.09561",
+      "https://arxiv.org/abs/2606.28277"
     ]
   },
   "preview.redd.it": {
     "first_seen": "2026-06-21T06:54:09.717407+00:00",
-    "mention_count": 17,
+    "mention_count": 24,
     "sample_urls": [
       "https://preview.redd.it/dm4nh4t71o7h1.png?width=3082&amp",
       "https://preview.redd.it/8n3fvpcr578h1.png?width=1119&amp",
@@ -247,6 +248,49 @@
     "mention_count": 1,
     "sample_urls": [
       "https://cursor.directory/plugins/awesome-cursor-rules-2026"
+    ]
+  },
+  "bernstein.run": {
+    "first_seen": "2026-07-01T06:29:11.554181+00:00",
+    "mention_count": 2,
+    "sample_urls": [
+      "https://bernstein.run"
+    ]
+  },
+  "discord.gg": {
+    "first_seen": "2026-07-01T06:29:11.554605+00:00",
+    "mention_count": 2,
+    "sample_urls": [
+      "https://discord.gg/ysC2prTGD"
+    ]
+  },
+  "anthropic.com": {
+    "first_seen": "2026-07-01T06:29:11.554903+00:00",
+    "mention_count": 2,
+    "sample_urls": [
+      "https://www.anthropic.com/news/redeploying-fable-5",
+      "https://www.anthropic.com/news/claude-sonnet-5"
+    ]
+  },
+  "perplexity.ai": {
+    "first_seen": "2026-07-01T06:29:11.554969+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://www.perplexity.ai/computer/a/97317781-4c97-4de0-88e9-e7c28186c99a"
+    ]
+  },
+  "code.claude.com": {
+    "first_seen": "2026-07-01T06:29:11.554992+00:00",
+    "mention_count": 2,
+    "sample_urls": [
+      "https://code.claude.com/docs/en/desktop-linux"
+    ]
+  },
+  "cursor.com": {
+    "first_seen": "2026-07-01T06:29:11.555119+00:00",
+    "mention_count": 2,
+    "sample_urls": [
+      "https://cursor.com/blog/ios-mobile-app"
     ]
   }
 }
