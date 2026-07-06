@@ -59,7 +59,7 @@
   },
   "preview.redd.it": {
     "first_seen": "2026-06-21T06:54:09.717407+00:00",
-    "mention_count": 24,
+    "mention_count": 28,
     "sample_urls": [
       "https://preview.redd.it/dm4nh4t71o7h1.png?width=3082&amp",
       "https://preview.redd.it/8n3fvpcr578h1.png?width=1119&amp",
@@ -224,9 +224,12 @@
   },
   "huggingface.co": {
     "first_seen": "2026-06-26T06:14:07.263565+00:00",
-    "mention_count": 1,
+    "mention_count": 4,
     "sample_urls": [
-      "https://huggingface.co/roneneldan/TinyStories-33M"
+      "https://huggingface.co/roneneldan/TinyStories-33M",
+      "https://huggingface.co/datasets/Dhiadev-tn/tunisian-darija-english",
+      "https://huggingface.co/Dhiadev-tn/darija-translator",
+      "https://huggingface.co/synthiumjp/competence-gate-qwen3.5-4b"
     ]
   },
   "kam.mff.cuni.cz": {
@@ -291,6 +294,48 @@
     "mention_count": 2,
     "sample_urls": [
       "https://cursor.com/blog/ios-mobile-app"
+    ]
+  },
+  "aihub.qualcomm.com": {
+    "first_seen": "2026-07-06T06:31:13.966763+00:00",
+    "mention_count": 2,
+    "sample_urls": [
+      "https://aihub.qualcomm.com/geniex"
+    ]
+  },
+  "dev-boz.github.io": {
+    "first_seen": "2026-07-06T06:31:13.967028+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://dev-boz.github.io/diffusive-semantic-compression/demo/architecture-demo.html"
+    ]
+  },
+  "pymupdf.io": {
+    "first_seen": "2026-07-06T06:31:13.967056+00:00",
+    "mention_count": 2,
+    "sample_urls": [
+      "https://pymupdf.io/blog/markdown-in-pymupdf-1-28"
+    ]
+  },
+  "hammeranvilbrew.com": {
+    "first_seen": "2026-07-06T06:31:13.967288+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://www.hammeranvilbrew.com/vibetanks?utm_source=claudeai"
+    ]
+  },
+  "open.substack.com": {
+    "first_seen": "2026-07-06T06:31:13.967438+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://open.substack.com/pub/thefirstderivative/p/the-machine-inside-the-machine?r=820hh&amp"
+    ]
+  },
+  "npmjs.com": {
+    "first_seen": "2026-07-06T06:31:13.967640+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://www.npmjs.com/package/nymor"
     ]
   }
 }
