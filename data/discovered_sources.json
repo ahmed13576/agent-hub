@@ -50,17 +50,18 @@
   },
   "arxiv.org": {
     "first_seen": "2026-06-21T06:54:09.717379+00:00",
-    "mention_count": 5,
+    "mention_count": 6,
     "sample_urls": [
       "https://arxiv.org/abs/2511.05963",
       "https://arxiv.org/pdf/2212.09561",
       "https://arxiv.org/abs/2606.28277",
-      "https://arxiv.org/abs/2607.02980"
+      "https://arxiv.org/abs/2607.02980",
+      "https://arxiv.org/abs/2606.08340"
     ]
   },
   "preview.redd.it": {
     "first_seen": "2026-06-21T06:54:09.717407+00:00",
-    "mention_count": 37,
+    "mention_count": 42,
     "sample_urls": [
       "https://preview.redd.it/dm4nh4t71o7h1.png?width=3082&amp",
       "https://preview.redd.it/8n3fvpcr578h1.png?width=1119&amp",
@@ -225,7 +226,7 @@
   },
   "huggingface.co": {
     "first_seen": "2026-06-26T06:14:07.263565+00:00",
-    "mention_count": 5,
+    "mention_count": 9,
     "sample_urls": [
       "https://huggingface.co/roneneldan/TinyStories-33M",
       "https://huggingface.co/datasets/Dhiadev-tn/tunisian-darija-english",
@@ -367,6 +368,43 @@
     "mention_count": 1,
     "sample_urls": [
       "https://toolport.app/calculator"
+    ]
+  },
+  "pluralis.ai": {
+    "first_seen": "2026-07-16T05:03:09.454027+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://pluralis.ai/blog/rl-post-training-on-macs"
+    ]
+  },
+  "alem-world.github.io": {
+    "first_seen": "2026-07-16T05:03:09.454222+00:00",
+    "mention_count": 2,
+    "sample_urls": [
+      "https://alem-world.github.io",
+      "https://alem-world.github.io/traces.html"
+    ]
+  },
+  "davidebtc186.substack.com": {
+    "first_seen": "2026-07-16T05:03:09.454618+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://davidebtc186.substack.com/p/ai-agents-are-starting-to-pay-in"
+    ]
+  },
+  "getlimits.app": {
+    "first_seen": "2026-07-16T05:03:09.454662+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://getlimits.app/"
+    ]
+  },
+  "stet.sh": {
+    "first_seen": "2026-07-16T05:03:09.454810+00:00",
+    "mention_count": 2,
+    "sample_urls": [
+      "https://www.stet.sh/blog/sonnet-5-vs-opus-4-8-reasoning-dial",
+      "https://www.stet.sh/private"
     ]
   }
 }
