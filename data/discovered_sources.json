@@ -61,7 +61,7 @@
   },
   "preview.redd.it": {
     "first_seen": "2026-06-21T06:54:09.717407+00:00",
-    "mention_count": 42,
+    "mention_count": 43,
     "sample_urls": [
       "https://preview.redd.it/dm4nh4t71o7h1.png?width=3082&amp",
       "https://preview.redd.it/8n3fvpcr578h1.png?width=1119&amp",
@@ -226,7 +226,7 @@
   },
   "huggingface.co": {
     "first_seen": "2026-06-26T06:14:07.263565+00:00",
-    "mention_count": 9,
+    "mention_count": 11,
     "sample_urls": [
       "https://huggingface.co/roneneldan/TinyStories-33M",
       "https://huggingface.co/datasets/Dhiadev-tn/tunisian-darija-english",
@@ -265,9 +265,10 @@
   },
   "discord.gg": {
     "first_seen": "2026-07-01T06:29:11.554605+00:00",
-    "mention_count": 2,
+    "mention_count": 3,
     "sample_urls": [
-      "https://discord.gg/ysC2prTGD"
+      "https://discord.gg/ysC2prTGD",
+      "https://discord.gg/AjMxmq3wrb"
     ]
   },
   "anthropic.com": {
@@ -295,9 +296,10 @@
   },
   "cursor.com": {
     "first_seen": "2026-07-01T06:29:11.555119+00:00",
-    "mention_count": 2,
+    "mention_count": 4,
     "sample_urls": [
-      "https://cursor.com/blog/ios-mobile-app"
+      "https://cursor.com/blog/ios-mobile-app",
+      "https://cursor.com/blog/agent-swarm-model-economics"
     ]
   },
   "aihub.qualcomm.com": {
@@ -405,6 +407,77 @@
     "sample_urls": [
       "https://www.stet.sh/blog/sonnet-5-vs-opus-4-8-reasoning-dial",
       "https://www.stet.sh/private"
+    ]
+  },
+  "henrypan.com": {
+    "first_seen": "2026-07-21T05:23:06.031779+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://www.henrypan.com/blog/2026-07-18-harness-training"
+    ]
+  },
+  "aethereos.net": {
+    "first_seen": "2026-07-21T05:23:06.031856+00:00",
+    "mention_count": 2,
+    "sample_urls": [
+      "https://aethereos.net/static/tinny66666.html"
+    ]
+  },
+  "stereo2spatial.francislabounty.com": {
+    "first_seen": "2026-07-21T05:23:06.031984+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://stereo2spatial.francislabounty.com"
+    ]
+  },
+  "francislabounty.com": {
+    "first_seen": "2026-07-21T05:23:06.031997+00:00",
+    "mention_count": 2,
+    "sample_urls": [
+      "https://francislabounty.com/blog/stereo2spatial-v2",
+      "https://francislabounty.com/blog/stereo2spatial"
+    ]
+  },
+  "narrato.tech": {
+    "first_seen": "2026-07-21T05:23:06.032115+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://www.narrato.tech/download"
+    ]
+  },
+  "files.catbox.moe": {
+    "first_seen": "2026-07-21T05:23:06.032173+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://files.catbox.moe/gq0uk4.py"
+    ]
+  },
+  "platform.claude.com": {
+    "first_seen": "2026-07-21T05:23:06.032197+00:00",
+    "mention_count": 2,
+    "sample_urls": [
+      "https://platform.claude.com/docs/en/about-claude/pricing"
+    ]
+  },
+  "wecleantheinternet.com": {
+    "first_seen": "2026-07-21T05:23:06.032384+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://wecleantheinternet.com/"
+    ]
+  },
+  "addons.mozilla.org": {
+    "first_seen": "2026-07-21T05:23:06.032400+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://addons.mozilla.org/en-US/firefox/addon/wecleantheinternet/"
+    ]
+  },
+  "sinnon.net": {
+    "first_seen": "2026-07-21T05:23:06.032442+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://sinnon.net"
     ]
   }
 }
