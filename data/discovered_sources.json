@@ -50,7 +50,7 @@
   },
   "arxiv.org": {
     "first_seen": "2026-06-21T06:54:09.717379+00:00",
-    "mention_count": 8,
+    "mention_count": 9,
     "sample_urls": [
       "https://arxiv.org/abs/2511.05963",
       "https://arxiv.org/pdf/2212.09561",
@@ -61,7 +61,7 @@
   },
   "preview.redd.it": {
     "first_seen": "2026-06-21T06:54:09.717407+00:00",
-    "mention_count": 51,
+    "mention_count": 57,
     "sample_urls": [
       "https://preview.redd.it/dm4nh4t71o7h1.png?width=3082&amp",
       "https://preview.redd.it/8n3fvpcr578h1.png?width=1119&amp",
@@ -90,9 +90,10 @@
   },
   "forum.cursor.com": {
     "first_seen": "2026-06-21T06:54:09.717722+00:00",
-    "mention_count": 2,
+    "mention_count": 3,
     "sample_urls": [
-      "https://forum.cursor.com/t/review-panel-doesnt-dismiss-rendering-it-useless-reproduced-by-another-user-too/163722"
+      "https://forum.cursor.com/t/review-panel-doesnt-dismiss-rendering-it-useless-reproduced-by-another-user-too/163722",
+      "https://forum.cursor.com/t/build-plan-in-new-agent/159995/10?u=pradeepcep"
     ]
   },
   "bbc.com": {
@@ -494,6 +495,48 @@
     "mention_count": 1,
     "sample_urls": [
       "https://abliteration.ai/blog/introducing-abliterated-model-large"
+    ]
+  },
+  "codepointer.substack.com": {
+    "first_seen": "2026-07-31T05:39:05.912169+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://codepointer.substack.com/p/how-kimi-k3-engineered-its-way-to"
+    ]
+  },
+  "echoloc.ai": {
+    "first_seen": "2026-07-31T05:39:05.912281+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://echoloc.ai/research/whos-hiring-heads-of-ai-2026/"
+    ]
+  },
+  "thebotpost.com": {
+    "first_seen": "2026-07-31T05:39:05.912353+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://thebotpost.com/ai-news/openai-rogue-ai-agent-hugging-face-hack-timeline"
+    ]
+  },
+  "nomlings.cc": {
+    "first_seen": "2026-07-31T05:39:05.912604+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://nomlings.cc"
+    ]
+  },
+  "blog.techraj156.com": {
+    "first_seen": "2026-07-31T05:39:05.912653+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://www.blog.techraj156.com/post/dns-rebinding-is-old-using-it-against-your-ai-agent-is-not"
+    ]
+  },
+  "aistartupquest.com": {
+    "first_seen": "2026-07-31T05:39:05.912785+00:00",
+    "mention_count": 2,
+    "sample_urls": [
+      "https://www.aistartupquest.com"
     ]
   }
 }
