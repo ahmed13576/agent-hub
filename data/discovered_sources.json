@@ -538,5 +538,54 @@
     "sample_urls": [
       "https://www.aistartupquest.com"
     ]
+  },
+  "api.quantdata.uk": {
+    "first_seen": "2026-08-01T05:29:04.468451+00:00",
+    "mention_count": 2,
+    "sample_urls": [
+      "https://api.quantdata.uk/mcp"
+    ]
+  },
+  "ifthen.today": {
+    "first_seen": "2026-08-01T05:29:04.468764+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://ifthen.today/"
+    ]
+  },
+  "lolm.imagineqira.com": {
+    "first_seen": "2026-08-01T05:29:04.468862+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://lolm.imagineqira.com/try.html"
+    ]
+  },
+  "karekod.org": {
+    "first_seen": "2026-08-01T05:29:04.468927+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://www.karekod.org/blog/yapay-zeka-token-fiyati/"
+    ]
+  },
+  "keep-dc-honest.com": {
+    "first_seen": "2026-08-01T05:29:04.468956+00:00",
+    "mention_count": 2,
+    "sample_urls": [
+      "https://www.keep-dc-honest.com/"
+    ]
+  },
+  "aifnet-public.b-cdn.net": {
+    "first_seen": "2026-08-01T05:29:04.469103+00:00",
+    "mention_count": 2,
+    "sample_urls": [
+      "https://aifnet-public.b-cdn.net/games/worms.html"
+    ]
+  },
+  "claude.ai": {
+    "first_seen": "2026-08-01T05:29:04.469142+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://claude.ai/code/artifact/dc880c46-ec67-485e-8dfc-6a3810f221f4"
+    ]
   }
 }
