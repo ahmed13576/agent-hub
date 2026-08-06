@@ -50,7 +50,7 @@
   },
   "arxiv.org": {
     "first_seen": "2026-06-21T06:54:09.717379+00:00",
-    "mention_count": 9,
+    "mention_count": 10,
     "sample_urls": [
       "https://arxiv.org/abs/2511.05963",
       "https://arxiv.org/pdf/2212.09561",
@@ -61,7 +61,7 @@
   },
   "preview.redd.it": {
     "first_seen": "2026-06-21T06:54:09.717407+00:00",
-    "mention_count": 57,
+    "mention_count": 59,
     "sample_urls": [
       "https://preview.redd.it/dm4nh4t71o7h1.png?width=3082&amp",
       "https://preview.redd.it/8n3fvpcr578h1.png?width=1119&amp",
@@ -586,6 +586,48 @@
     "mention_count": 1,
     "sample_urls": [
       "https://claude.ai/code/artifact/dc880c46-ec67-485e-8dfc-6a3810f221f4"
+    ]
+  },
+  "informationism.org": {
+    "first_seen": "2026-08-06T05:19:08.209771+00:00",
+    "mention_count": 2,
+    "sample_urls": [
+      "https://www.informationism.org/lemchat/lemchat=message=your_message+end"
+    ]
+  },
+  "tcrf.net": {
+    "first_seen": "2026-08-06T05:19:08.210187+00:00",
+    "mention_count": 2,
+    "sample_urls": [
+      "https://tcrf.net"
+    ]
+  },
+  "urlscan.io": {
+    "first_seen": "2026-08-06T05:19:08.210200+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://urlscan.io/responses/f1e225667a71a1a25ed14795c741683be95139c194065c6fbf861c9280f0096e/"
+    ]
+  },
+  "capforge.cc": {
+    "first_seen": "2026-08-06T05:19:08.210224+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://capforge.cc"
+    ]
+  },
+  "tryiro.com": {
+    "first_seen": "2026-08-06T05:19:08.210251+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://tryiro.com"
+    ]
+  },
+  "tibursocampos.github.io": {
+    "first_seen": "2026-08-06T05:19:08.210577+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://tibursocampos.github.io/agent-dev-toolkit/"
     ]
   }
 }
