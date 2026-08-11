@@ -50,7 +50,7 @@
   },
   "arxiv.org": {
     "first_seen": "2026-06-21T06:54:09.717379+00:00",
-    "mention_count": 10,
+    "mention_count": 11,
     "sample_urls": [
       "https://arxiv.org/abs/2511.05963",
       "https://arxiv.org/pdf/2212.09561",
@@ -61,7 +61,7 @@
   },
   "preview.redd.it": {
     "first_seen": "2026-06-21T06:54:09.717407+00:00",
-    "mention_count": 59,
+    "mention_count": 71,
     "sample_urls": [
       "https://preview.redd.it/dm4nh4t71o7h1.png?width=3082&amp",
       "https://preview.redd.it/8n3fvpcr578h1.png?width=1119&amp",
@@ -90,10 +90,11 @@
   },
   "forum.cursor.com": {
     "first_seen": "2026-06-21T06:54:09.717722+00:00",
-    "mention_count": 3,
+    "mention_count": 5,
     "sample_urls": [
       "https://forum.cursor.com/t/review-panel-doesnt-dismiss-rendering-it-useless-reproduced-by-another-user-too/163722",
-      "https://forum.cursor.com/t/build-plan-in-new-agent/159995/10?u=pradeepcep"
+      "https://forum.cursor.com/t/build-plan-in-new-agent/159995/10?u=pradeepcep",
+      "https://forum.cursor.com/t/rg-exe-100-cpu/167560/8"
     ]
   },
   "bbc.com": {
@@ -227,7 +228,7 @@
   },
   "huggingface.co": {
     "first_seen": "2026-06-26T06:14:07.263565+00:00",
-    "mention_count": 14,
+    "mention_count": 20,
     "sample_urls": [
       "https://huggingface.co/roneneldan/TinyStories-33M",
       "https://huggingface.co/datasets/Dhiadev-tn/tunisian-darija-english",
@@ -628,6 +629,97 @@
     "mention_count": 1,
     "sample_urls": [
       "https://tibursocampos.github.io/agent-dev-toolkit/"
+    ]
+  },
+  "go.meta.me": {
+    "first_seen": "2026-08-11T03:46:04.541875+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://go.meta.me/museglimmer"
+    ]
+  },
+  "developer.meta.com": {
+    "first_seen": "2026-08-11T03:46:04.541904+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://developer.meta.com/ai/models/muse-glimmer/"
+    ]
+  },
+  "gemmeh.com": {
+    "first_seen": "2026-08-11T03:46:04.542025+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://gemmeh.com/"
+    ]
+  },
+  "cactuscompute.com": {
+    "first_seen": "2026-08-11T03:46:04.542251+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://cactuscompute.com/needle"
+    ]
+  },
+  "ood.dev": {
+    "first_seen": "2026-08-11T03:46:04.542499+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://ood.dev/posts/calculator/"
+    ]
+  },
+  "danyaljj.github.io": {
+    "first_seen": "2026-08-11T03:46:04.542531+00:00",
+    "mention_count": 2,
+    "sample_urls": [
+      "https://danyaljj.github.io/neurips2026-workshops/"
+    ]
+  },
+  "openreview.net": {
+    "first_seen": "2026-08-11T03:46:04.542578+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://openreview.net/group?id=NeurIPS.cc/2026/Workshop/RTCA"
+    ]
+  },
+  "rtcaneurips26.github.io": {
+    "first_seen": "2026-08-11T03:46:04.542588+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://rtcaneurips26.github.io/"
+    ]
+  },
+  "velaterm.com": {
+    "first_seen": "2026-08-11T03:46:04.542861+00:00",
+    "mention_count": 2,
+    "sample_urls": [
+      "https://velaterm.com/"
+    ]
+  },
+  "twitch.tv": {
+    "first_seen": "2026-08-11T03:46:04.542950+00:00",
+    "mention_count": 2,
+    "sample_urls": [
+      "https://www.twitch.tv/claudeplaysclaudecraft"
+    ]
+  },
+  "skilldex-web-tau.vercel.app": {
+    "first_seen": "2026-08-11T03:46:04.543078+00:00",
+    "mention_count": 2,
+    "sample_urls": [
+      "https://skilldex-web-tau.vercel.app/"
+    ]
+  },
+  "a.co": {
+    "first_seen": "2026-08-11T03:46:04.543119+00:00",
+    "mention_count": 2,
+    "sample_urls": [
+      "https://a.co/d/069KzWif"
+    ]
+  },
+  "nextjs.org": {
+    "first_seen": "2026-08-11T03:46:04.543421+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://nextjs.org/docs/14/app/building-your-application/routing/dynamic-routes"
     ]
   }
 }
