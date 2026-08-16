@@ -61,7 +61,7 @@
   },
   "preview.redd.it": {
     "first_seen": "2026-06-21T06:54:09.717407+00:00",
-    "mention_count": 71,
+    "mention_count": 74,
     "sample_urls": [
       "https://preview.redd.it/dm4nh4t71o7h1.png?width=3082&amp",
       "https://preview.redd.it/8n3fvpcr578h1.png?width=1119&amp",
@@ -228,7 +228,7 @@
   },
   "huggingface.co": {
     "first_seen": "2026-06-26T06:14:07.263565+00:00",
-    "mention_count": 20,
+    "mention_count": 22,
     "sample_urls": [
       "https://huggingface.co/roneneldan/TinyStories-33M",
       "https://huggingface.co/datasets/Dhiadev-tn/tunisian-darija-english",
@@ -661,9 +661,10 @@
   },
   "ood.dev": {
     "first_seen": "2026-08-11T03:46:04.542499+00:00",
-    "mention_count": 1,
+    "mention_count": 2,
     "sample_urls": [
-      "https://ood.dev/posts/calculator/"
+      "https://ood.dev/posts/calculator/",
+      "https://ood.dev/posts/doom/"
     ]
   },
   "danyaljj.github.io": {
@@ -720,6 +721,55 @@
     "mention_count": 1,
     "sample_urls": [
       "https://nextjs.org/docs/14/app/building-your-application/routing/dynamic-routes"
+    ]
+  },
+  "majiayu000.github.io": {
+    "first_seen": "2026-08-16T03:02:04.839379+00:00",
+    "mention_count": 2,
+    "sample_urls": [
+      "https://majiayu000.github.io/claude-skill-registry-core/"
+    ]
+  },
+  "jazzyalex.github.io": {
+    "first_seen": "2026-08-16T03:02:04.839893+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://jazzyalex.github.io/agent-sessions/bench/?campaign=reddit&amp"
+    ]
+  },
+  "support.claude.com": {
+    "first_seen": "2026-08-16T03:02:04.840252+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://support.claude.com/en/articles/12902428-use-claude-in-chrome-safely"
+    ]
+  },
+  "claude.com": {
+    "first_seen": "2026-08-16T03:02:04.840282+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://claude.com/chrome"
+    ]
+  },
+  "chrisjz.github.io": {
+    "first_seen": "2026-08-16T03:02:04.840407+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://chrisjz.github.io/between-tokens/"
+    ]
+  },
+  "cjros.itch.io": {
+    "first_seen": "2026-08-16T03:02:04.840425+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://cjros.itch.io/between-tokens"
+    ]
+  },
+  "originalname457.github.io": {
+    "first_seen": "2026-08-16T03:02:04.840461+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://originalname457.github.io/claudemon/"
     ]
   }
 }
