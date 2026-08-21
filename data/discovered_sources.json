@@ -50,7 +50,7 @@
   },
   "arxiv.org": {
     "first_seen": "2026-06-21T06:54:09.717379+00:00",
-    "mention_count": 11,
+    "mention_count": 13,
     "sample_urls": [
       "https://arxiv.org/abs/2511.05963",
       "https://arxiv.org/pdf/2212.09561",
@@ -61,7 +61,7 @@
   },
   "preview.redd.it": {
     "first_seen": "2026-06-21T06:54:09.717407+00:00",
-    "mention_count": 74,
+    "mention_count": 78,
     "sample_urls": [
       "https://preview.redd.it/dm4nh4t71o7h1.png?width=3082&amp",
       "https://preview.redd.it/8n3fvpcr578h1.png?width=1119&amp",
@@ -298,12 +298,13 @@
   },
   "cursor.com": {
     "first_seen": "2026-07-01T06:29:11.555119+00:00",
-    "mention_count": 8,
+    "mention_count": 10,
     "sample_urls": [
       "https://cursor.com/blog/ios-mobile-app",
       "https://cursor.com/blog/agent-swarm-model-economics",
       "https://cursor.com/dashboard/billing",
-      "https://cursor.com/dashboard/spending"
+      "https://cursor.com/dashboard/spending",
+      "https://cursor.com/changelog#goal"
     ]
   },
   "aihub.qualcomm.com": {
@@ -458,9 +459,11 @@
   },
   "platform.claude.com": {
     "first_seen": "2026-07-21T05:23:06.032197+00:00",
-    "mention_count": 2,
+    "mention_count": 4,
     "sample_urls": [
-      "https://platform.claude.com/docs/en/about-claude/pricing"
+      "https://platform.claude.com/docs/en/about-claude/pricing",
+      "https://platform.claude.com/docs/en/agents-and-tools/tool-use/computer-use-tool",
+      "https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview"
     ]
   },
   "wecleantheinternet.com": {
@@ -746,9 +749,10 @@
   },
   "claude.com": {
     "first_seen": "2026-08-16T03:02:04.840282+00:00",
-    "mention_count": 1,
+    "mention_count": 2,
     "sample_urls": [
-      "https://claude.com/chrome"
+      "https://claude.com/chrome",
+      "https://claude.com/blog/computer-use-skills-api-files-api"
     ]
   },
   "chrisjz.github.io": {
@@ -770,6 +774,62 @@
     "mention_count": 1,
     "sample_urls": [
       "https://originalname457.github.io/claudemon/"
+    ]
+  },
+  "books.vizuara.ai": {
+    "first_seen": "2026-08-21T03:04:05.889793+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://books.vizuara.ai/book/pretraining-a-mini-k3"
+    ]
+  },
+  "263311487-ux.github.io": {
+    "first_seen": "2026-08-21T03:04:05.890288+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://263311487-ux.github.io/dsh-verify/arena/"
+    ]
+  },
+  "vibepod.dev": {
+    "first_seen": "2026-08-21T03:04:05.890332+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://vibepod.dev/news/vibepod-cli-0-20/"
+    ]
+  },
+  "doi.org": {
+    "first_seen": "2026-08-21T03:04:05.890578+00:00",
+    "mention_count": 2,
+    "sample_urls": [
+      "https://doi.org/10.5281/zenodo.22028087"
+    ]
+  },
+  "eventbrite.co.uk": {
+    "first_seen": "2026-08-21T03:04:05.890619+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://www.eventbrite.co.uk/e/the-genai-build-lab-build-production-ready-rag-on-a-budget-tickets-1994016271345?aff=rml"
+    ]
+  },
+  "pisoni.ai": {
+    "first_seen": "2026-08-21T03:04:05.890705+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://pisoni.ai/posts/ssog"
+    ]
+  },
+  "thomsonreuters.com": {
+    "first_seen": "2026-08-21T03:04:05.890825+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://www.thomsonreuters.com/en/press-releases/2026/august/thomson-reuters-launches-next-generation-of-cocounsel-legal-the-ai-ecosystem-built-for-legal-professionals"
+    ]
+  },
+  "artificialanalysis.ai": {
+    "first_seen": "2026-08-21T03:04:05.891141+00:00",
+    "mention_count": 2,
+    "sample_urls": [
+      "https://artificialanalysis.ai/"
     ]
   }
 }
