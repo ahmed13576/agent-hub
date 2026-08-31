@@ -50,7 +50,7 @@
   },
   "arxiv.org": {
     "first_seen": "2026-06-21T06:54:09.717379+00:00",
-    "mention_count": 13,
+    "mention_count": 16,
     "sample_urls": [
       "https://arxiv.org/abs/2511.05963",
       "https://arxiv.org/pdf/2212.09561",
@@ -61,7 +61,7 @@
   },
   "preview.redd.it": {
     "first_seen": "2026-06-21T06:54:09.717407+00:00",
-    "mention_count": 78,
+    "mention_count": 84,
     "sample_urls": [
       "https://preview.redd.it/dm4nh4t71o7h1.png?width=3082&amp",
       "https://preview.redd.it/8n3fvpcr578h1.png?width=1119&amp",
@@ -228,7 +228,7 @@
   },
   "huggingface.co": {
     "first_seen": "2026-06-26T06:14:07.263565+00:00",
-    "mention_count": 22,
+    "mention_count": 29,
     "sample_urls": [
       "https://huggingface.co/roneneldan/TinyStories-33M",
       "https://huggingface.co/datasets/Dhiadev-tn/tunisian-darija-english",
@@ -267,10 +267,11 @@
   },
   "discord.gg": {
     "first_seen": "2026-07-01T06:29:11.554605+00:00",
-    "mention_count": 3,
+    "mention_count": 4,
     "sample_urls": [
       "https://discord.gg/ysC2prTGD",
-      "https://discord.gg/AjMxmq3wrb"
+      "https://discord.gg/AjMxmq3wrb",
+      "https://discord.gg/QR7SARHRxK"
     ]
   },
   "anthropic.com": {
@@ -830,6 +831,105 @@
     "mention_count": 2,
     "sample_urls": [
       "https://artificialanalysis.ai/"
+    ]
+  },
+  "modelscope.cn": {
+    "first_seen": "2026-08-31T08:09:03.934134+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://modelscope.cn/models/ZhipuAI/GLM-5.3-Flash"
+    ]
+  },
+  "z.ai": {
+    "first_seen": "2026-08-31T08:09:03.934166+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://z.ai/blog/glm-5.3-flash"
+    ]
+  },
+  "docs.z.ai": {
+    "first_seen": "2026-08-31T08:09:03.934180+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://docs.z.ai/guides/llm/glm-5.3-flash"
+    ]
+  },
+  "recipes.vllm.ai": {
+    "first_seen": "2026-08-31T08:09:03.934201+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://recipes.vllm.ai/zai-org/GLM-5.3-Flash"
+    ]
+  },
+  "docs.sglang.io": {
+    "first_seen": "2026-08-31T08:09:03.934212+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-5.3-Flash"
+    ]
+  },
+  "lightseek.org": {
+    "first_seen": "2026-08-31T08:09:03.934224+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://lightseek.org/tokenspeed/recipes/models#glm-5-3-flash"
+    ]
+  },
+  "opencode.ai": {
+    "first_seen": "2026-08-31T08:09:03.934511+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://opencode.ai/config.json&quot"
+    ]
+  },
+  "127.0.0.1:42134": {
+    "first_seen": "2026-08-31T08:09:03.934523+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "http://127.0.0.1:42134/v1&quot"
+    ]
+  },
+  "hub.docker.com": {
+    "first_seen": "2026-08-31T08:09:03.934632+00:00",
+    "mention_count": 2,
+    "sample_urls": [
+      "https://hub.docker.com/r/rocm/dev-ubuntu-24.04/tags"
+    ]
+  },
+  "nek12.dev": {
+    "first_seen": "2026-08-31T08:09:03.934881+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://nek12.dev/media/speculative-compaction-kent-1788005145.webp"
+    ]
+  },
+  "aistupidlevel.info": {
+    "first_seen": "2026-08-31T08:09:03.935259+00:00",
+    "mention_count": 2,
+    "sample_urls": [
+      "https://aistupidlevel.info",
+      "https://aistupidlevel.info/methodology"
+    ]
+  },
+  "blog.google": {
+    "first_seen": "2026-08-31T08:09:03.935391+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://blog.google/intl/en-au/company-news/google-for-startups-accelerator-introducing-our-2026-australia-new-zealand-ai-cohort/"
+    ]
+  },
+  "aipass.ai": {
+    "first_seen": "2026-08-31T08:09:03.935506+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://aipass.ai"
+    ]
+  },
+  "openai.com": {
+    "first_seen": "2026-08-31T08:09:03.935832+00:00",
+    "mention_count": 2,
+    "sample_urls": [
+      "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/"
     ]
   }
 }
