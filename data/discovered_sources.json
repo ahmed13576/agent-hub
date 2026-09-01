@@ -61,7 +61,7 @@
   },
   "preview.redd.it": {
     "first_seen": "2026-06-21T06:54:09.717407+00:00",
-    "mention_count": 84,
+    "mention_count": 92,
     "sample_urls": [
       "https://preview.redd.it/dm4nh4t71o7h1.png?width=3082&amp",
       "https://preview.redd.it/8n3fvpcr578h1.png?width=1119&amp",
@@ -90,11 +90,12 @@
   },
   "forum.cursor.com": {
     "first_seen": "2026-06-21T06:54:09.717722+00:00",
-    "mention_count": 5,
+    "mention_count": 7,
     "sample_urls": [
       "https://forum.cursor.com/t/review-panel-doesnt-dismiss-rendering-it-useless-reproduced-by-another-user-too/163722",
       "https://forum.cursor.com/t/build-plan-in-new-agent/159995/10?u=pradeepcep",
-      "https://forum.cursor.com/t/rg-exe-100-cpu/167560/8"
+      "https://forum.cursor.com/t/rg-exe-100-cpu/167560/8",
+      "https://forum.cursor.com/t/cloud-agents-default-model-grok-4-6-high-still-runs-fast-and-burns-2x-usage/169576"
     ]
   },
   "bbc.com": {
@@ -930,6 +931,13 @@
     "mention_count": 2,
     "sample_urls": [
       "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/"
+    ]
+  },
+  "pdfx.zip": {
+    "first_seen": "2026-09-01T07:18:04.446390+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://pdfx.zip"
     ]
   }
 }
