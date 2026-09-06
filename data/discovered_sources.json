@@ -61,7 +61,7 @@
   },
   "preview.redd.it": {
     "first_seen": "2026-06-21T06:54:09.717407+00:00",
-    "mention_count": 92,
+    "mention_count": 96,
     "sample_urls": [
       "https://preview.redd.it/dm4nh4t71o7h1.png?width=3082&amp",
       "https://preview.redd.it/8n3fvpcr578h1.png?width=1119&amp",
@@ -229,7 +229,7 @@
   },
   "huggingface.co": {
     "first_seen": "2026-06-26T06:14:07.263565+00:00",
-    "mention_count": 29,
+    "mention_count": 31,
     "sample_urls": [
       "https://huggingface.co/roneneldan/TinyStories-33M",
       "https://huggingface.co/datasets/Dhiadev-tn/tunisian-darija-english",
@@ -801,9 +801,10 @@
   },
   "doi.org": {
     "first_seen": "2026-08-21T03:04:05.890578+00:00",
-    "mention_count": 2,
+    "mention_count": 3,
     "sample_urls": [
-      "https://doi.org/10.5281/zenodo.22028087"
+      "https://doi.org/10.5281/zenodo.22028087",
+      "https://doi.org/10.48550/arXiv.2609.02737"
     ]
   },
   "eventbrite.co.uk": {
@@ -938,6 +939,36 @@
     "mention_count": 1,
     "sample_urls": [
       "https://pdfx.zip"
+    ]
+  },
+  "halv.ai": {
+    "first_seen": "2026-09-06T06:54:04.839731+00:00",
+    "mention_count": 2,
+    "sample_urls": [
+      "https://halv.ai/blog/halv-swe-rebench-20-pairs/",
+      "https://halv.ai/"
+    ]
+  },
+  "okf-memory.dev": {
+    "first_seen": "2026-09-06T06:54:04.839868+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://okf-memory.dev"
+    ]
+  },
+  "mcp-sentinel.pasihakamaki.workers.dev": {
+    "first_seen": "2026-09-06T06:54:04.840109+00:00",
+    "mention_count": 2,
+    "sample_urls": [
+      "https://mcp-sentinel.pasihakamaki.workers.dev/mcp",
+      "https://mcp-sentinel.pasihakamaki.workers.dev"
+    ]
+  },
+  "api.example.com": {
+    "first_seen": "2026-09-06T06:54:04.840121+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://api.example.com/mcp"
     ]
   }
 }
