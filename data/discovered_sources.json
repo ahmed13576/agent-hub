@@ -61,7 +61,7 @@
   },
   "preview.redd.it": {
     "first_seen": "2026-06-21T06:54:09.717407+00:00",
-    "mention_count": 96,
+    "mention_count": 99,
     "sample_urls": [
       "https://preview.redd.it/dm4nh4t71o7h1.png?width=3082&amp",
       "https://preview.redd.it/8n3fvpcr578h1.png?width=1119&amp",
@@ -229,7 +229,7 @@
   },
   "huggingface.co": {
     "first_seen": "2026-06-26T06:14:07.263565+00:00",
-    "mention_count": 31,
+    "mention_count": 34,
     "sample_urls": [
       "https://huggingface.co/roneneldan/TinyStories-33M",
       "https://huggingface.co/datasets/Dhiadev-tn/tunisian-darija-english",
@@ -929,9 +929,10 @@
   },
   "openai.com": {
     "first_seen": "2026-08-31T08:09:03.935832+00:00",
-    "mention_count": 2,
+    "mention_count": 3,
     "sample_urls": [
-      "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/"
+      "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/",
+      "https://openai.com/index/introducing-the-agents-api/"
     ]
   },
   "pdfx.zip": {
@@ -969,6 +970,63 @@
     "mention_count": 1,
     "sample_urls": [
       "https://api.example.com/mcp"
+    ]
+  },
+  "agentskills.io": {
+    "first_seen": "2026-09-11T07:03:04.333028+00:00",
+    "mention_count": 2,
+    "sample_urls": [
+      "https://agentskills.io"
+    ]
+  },
+  "pai.stanford.edu": {
+    "first_seen": "2026-09-11T07:03:04.333684+00:00",
+    "mention_count": 2,
+    "sample_urls": [
+      "https://pai.stanford.edu/apply/pai1/student?r=ml",
+      "https://pai.stanford.edu/apply/pai1/sl?r=ml"
+    ]
+  },
+  "research.yandex.com": {
+    "first_seen": "2026-09-11T07:03:04.333854+00:00",
+    "mention_count": 2,
+    "sample_urls": [
+      "https://research.yandex.com/blog/the-kv-cache-as-an-agent-runtime"
+    ]
+  },
+  "za.investing.com": {
+    "first_seen": "2026-09-11T07:03:04.333962+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://za.investing.com/news/stock-market-news/openai-launches-agents-api-in-public-beta-for-developers-93CH-4460924"
+    ]
+  },
+  "share.scape.work": {
+    "first_seen": "2026-09-11T07:03:04.334051+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://share.scape.work/s/z0dsiBgY5kIc6ybdnPiLXg#k=VOmp-YEkM5LNmwaym841uu7cnqrWBmQR4FT5joj8s2M&amp"
+    ]
+  },
+  "megaman.davidluky.com": {
+    "first_seen": "2026-09-11T07:03:04.334084+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://megaman.davidluky.com/en/"
+    ]
+  },
+  "thuynh-91.github.io": {
+    "first_seen": "2026-09-11T07:03:04.334132+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://thuynh-91.github.io/gittimeline/"
+    ]
+  },
+  "anomalisa.uriva.deno.net": {
+    "first_seen": "2026-09-11T07:03:04.334495+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://anomalisa.uriva.deno.net"
     ]
   }
 }
