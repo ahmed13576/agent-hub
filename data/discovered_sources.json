@@ -50,7 +50,7 @@
   },
   "arxiv.org": {
     "first_seen": "2026-06-21T06:54:09.717379+00:00",
-    "mention_count": 16,
+    "mention_count": 17,
     "sample_urls": [
       "https://arxiv.org/abs/2511.05963",
       "https://arxiv.org/pdf/2212.09561",
@@ -61,7 +61,7 @@
   },
   "preview.redd.it": {
     "first_seen": "2026-06-21T06:54:09.717407+00:00",
-    "mention_count": 99,
+    "mention_count": 101,
     "sample_urls": [
       "https://preview.redd.it/dm4nh4t71o7h1.png?width=3082&amp",
       "https://preview.redd.it/8n3fvpcr578h1.png?width=1119&amp",
@@ -107,9 +107,10 @@
   },
   "cnbc.com": {
     "first_seen": "2026-06-21T06:54:09.718042+00:00",
-    "mention_count": 1,
+    "mention_count": 2,
     "sample_urls": [
-      "https://www.cnbc.com/2025/01/27/nvidia-sheds-almost-600-billion-in-market-cap-biggest-drop-ever.html"
+      "https://www.cnbc.com/2025/01/27/nvidia-sheds-almost-600-billion-in-market-cap-biggest-drop-ever.html",
+      "https://www.cnbc.com/2026/09/08/meta-personal-ai-agents-public-reckoning-privacy-safety.html"
     ]
   },
   "hbr.org": {
@@ -229,7 +230,7 @@
   },
   "huggingface.co": {
     "first_seen": "2026-06-26T06:14:07.263565+00:00",
-    "mention_count": 34,
+    "mention_count": 39,
     "sample_urls": [
       "https://huggingface.co/roneneldan/TinyStories-33M",
       "https://huggingface.co/datasets/Dhiadev-tn/tunisian-darija-english",
@@ -1027,6 +1028,34 @@
     "mention_count": 1,
     "sample_urls": [
       "https://anomalisa.uriva.deno.net"
+    ]
+  },
+  "kendell.dev": {
+    "first_seen": "2026-09-16T07:16:05.030529+00:00",
+    "mention_count": 2,
+    "sample_urls": [
+      "https://kendell.dev/blog/crofaifalse/"
+    ]
+  },
+  "qlni.github.io": {
+    "first_seen": "2026-09-16T07:16:05.030875+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://qlni.github.io/SHADOW-50M-Instruct/web"
+    ]
+  },
+  "about.fb.com": {
+    "first_seen": "2026-09-16T07:16:05.031020+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/"
+    ]
+  },
+  "techcrunch.com": {
+    "first_seen": "2026-09-16T07:16:05.031027+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/"
     ]
   }
 }
