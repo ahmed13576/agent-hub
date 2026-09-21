@@ -61,7 +61,7 @@
   },
   "preview.redd.it": {
     "first_seen": "2026-06-21T06:54:09.717407+00:00",
-    "mention_count": 101,
+    "mention_count": 111,
     "sample_urls": [
       "https://preview.redd.it/dm4nh4t71o7h1.png?width=3082&amp",
       "https://preview.redd.it/8n3fvpcr578h1.png?width=1119&amp",
@@ -230,7 +230,7 @@
   },
   "huggingface.co": {
     "first_seen": "2026-06-26T06:14:07.263565+00:00",
-    "mention_count": 39,
+    "mention_count": 40,
     "sample_urls": [
       "https://huggingface.co/roneneldan/TinyStories-33M",
       "https://huggingface.co/datasets/Dhiadev-tn/tunisian-darija-english",
@@ -752,10 +752,11 @@
   },
   "claude.com": {
     "first_seen": "2026-08-16T03:02:04.840282+00:00",
-    "mention_count": 2,
+    "mention_count": 3,
     "sample_urls": [
       "https://claude.com/chrome",
-      "https://claude.com/blog/computer-use-skills-api-files-api"
+      "https://claude.com/blog/computer-use-skills-api-files-api",
+      "https://claude.com/blog/cowork-is-now-claude"
     ]
   },
   "chrisjz.github.io": {
@@ -1056,6 +1057,55 @@
     "mention_count": 1,
     "sample_urls": [
       "https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/"
+    ]
+  },
+  "hol.org": {
+    "first_seen": "2026-09-21T07:41:03.689989+00:00",
+    "mention_count": 2,
+    "sample_urls": [
+      "https://hol.org/plugins"
+    ]
+  },
+  "code.datorum.net": {
+    "first_seen": "2026-09-21T07:41:03.690557+00:00",
+    "mention_count": 2,
+    "sample_urls": [
+      "https://code.datorum.net/"
+    ]
+  },
+  "localhost:8080": {
+    "first_seen": "2026-09-21T07:41:03.690929+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "http://localhost:8080/v1/chat/completions"
+    ]
+  },
+  "heretek-ai.github.io": {
+    "first_seen": "2026-09-21T07:41:03.691235+00:00",
+    "mention_count": 2,
+    "sample_urls": [
+      "https://heretek-ai.github.io/Token-Max/#/"
+    ]
+  },
+  "programasweights.com": {
+    "first_seen": "2026-09-21T07:41:03.691550+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://programasweights.com/playground"
+    ]
+  },
+  "holdoutlabs-ai.github.io": {
+    "first_seen": "2026-09-21T07:41:03.691658+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://holdoutlabs-ai.github.io/reproduce-it-or-it-doesnt-count/"
+    ]
+  },
+  "open-vsx.org": {
+    "first_seen": "2026-09-21T07:41:03.691987+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://open-vsx.org/extension/AbdelrahmanMSalim/composer-zoom"
     ]
   }
 }
