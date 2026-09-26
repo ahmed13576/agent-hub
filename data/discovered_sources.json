@@ -61,7 +61,7 @@
   },
   "preview.redd.it": {
     "first_seen": "2026-06-21T06:54:09.717407+00:00",
-    "mention_count": 111,
+    "mention_count": 127,
     "sample_urls": [
       "https://preview.redd.it/dm4nh4t71o7h1.png?width=3082&amp",
       "https://preview.redd.it/8n3fvpcr578h1.png?width=1119&amp",
@@ -90,12 +90,13 @@
   },
   "forum.cursor.com": {
     "first_seen": "2026-06-21T06:54:09.717722+00:00",
-    "mention_count": 7,
+    "mention_count": 11,
     "sample_urls": [
       "https://forum.cursor.com/t/review-panel-doesnt-dismiss-rendering-it-useless-reproduced-by-another-user-too/163722",
       "https://forum.cursor.com/t/build-plan-in-new-agent/159995/10?u=pradeepcep",
       "https://forum.cursor.com/t/rg-exe-100-cpu/167560/8",
-      "https://forum.cursor.com/t/cloud-agents-default-model-grok-4-6-high-still-runs-fast-and-burns-2x-usage/169576"
+      "https://forum.cursor.com/t/cloud-agents-default-model-grok-4-6-high-still-runs-fast-and-burns-2x-usage/169576",
+      "https://forum.cursor.com/t/bug-help-other-models-hits-100-while-usage-export-at-published-api-rates-only-reconstructs-65-how-to-reconcile-the-meter/172012"
     ]
   },
   "bbc.com": {
@@ -230,7 +231,7 @@
   },
   "huggingface.co": {
     "first_seen": "2026-06-26T06:14:07.263565+00:00",
-    "mention_count": 40,
+    "mention_count": 43,
     "sample_urls": [
       "https://huggingface.co/roneneldan/TinyStories-33M",
       "https://huggingface.co/datasets/Dhiadev-tn/tunisian-darija-english",
@@ -278,10 +279,11 @@
   },
   "anthropic.com": {
     "first_seen": "2026-07-01T06:29:11.554903+00:00",
-    "mention_count": 2,
+    "mention_count": 3,
     "sample_urls": [
       "https://www.anthropic.com/news/redeploying-fable-5",
-      "https://www.anthropic.com/news/claude-sonnet-5"
+      "https://www.anthropic.com/news/claude-sonnet-5",
+      "http://anthropic.com/claude-opus-5-5"
     ]
   },
   "perplexity.ai": {
@@ -745,9 +747,10 @@
   },
   "support.claude.com": {
     "first_seen": "2026-08-16T03:02:04.840252+00:00",
-    "mention_count": 1,
+    "mention_count": 3,
     "sample_urls": [
-      "https://support.claude.com/en/articles/12902428-use-claude-in-chrome-safely"
+      "https://support.claude.com/en/articles/12902428-use-claude-in-chrome-safely",
+      "https://support.claude.com/en/articles/17040437-claude-code-wrap-up-allowance"
     ]
   },
   "claude.com": {
@@ -1106,6 +1109,13 @@
     "mention_count": 1,
     "sample_urls": [
       "https://open-vsx.org/extension/AbdelrahmanMSalim/composer-zoom"
+    ]
+  },
+  "pragma-app.sh": {
+    "first_seen": "2026-09-26T07:07:04.497018+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://pragma-app.sh/"
     ]
   }
 }
