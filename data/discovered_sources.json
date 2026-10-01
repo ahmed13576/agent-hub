@@ -50,7 +50,7 @@
   },
   "arxiv.org": {
     "first_seen": "2026-06-21T06:54:09.717379+00:00",
-    "mention_count": 17,
+    "mention_count": 19,
     "sample_urls": [
       "https://arxiv.org/abs/2511.05963",
       "https://arxiv.org/pdf/2212.09561",
@@ -61,7 +61,7 @@
   },
   "preview.redd.it": {
     "first_seen": "2026-06-21T06:54:09.717407+00:00",
-    "mention_count": 127,
+    "mention_count": 139,
     "sample_urls": [
       "https://preview.redd.it/dm4nh4t71o7h1.png?width=3082&amp",
       "https://preview.redd.it/8n3fvpcr578h1.png?width=1119&amp",
@@ -231,7 +231,7 @@
   },
   "huggingface.co": {
     "first_seen": "2026-06-26T06:14:07.263565+00:00",
-    "mention_count": 43,
+    "mention_count": 46,
     "sample_urls": [
       "https://huggingface.co/roneneldan/TinyStories-33M",
       "https://huggingface.co/datasets/Dhiadev-tn/tunisian-darija-english",
@@ -279,11 +279,12 @@
   },
   "anthropic.com": {
     "first_seen": "2026-07-01T06:29:11.554903+00:00",
-    "mention_count": 3,
+    "mention_count": 4,
     "sample_urls": [
       "https://www.anthropic.com/news/redeploying-fable-5",
       "https://www.anthropic.com/news/claude-sonnet-5",
-      "http://anthropic.com/claude-opus-5-5"
+      "http://anthropic.com/claude-opus-5-5",
+      "https://www.anthropic.com/research/what-work-can-robots-do"
     ]
   },
   "perplexity.ai": {
@@ -806,10 +807,11 @@
   },
   "doi.org": {
     "first_seen": "2026-08-21T03:04:05.890578+00:00",
-    "mention_count": 3,
+    "mention_count": 4,
     "sample_urls": [
       "https://doi.org/10.5281/zenodo.22028087",
-      "https://doi.org/10.48550/arXiv.2609.02737"
+      "https://doi.org/10.48550/arXiv.2609.02737",
+      "https://doi.org/10.5281/zenodo.22838708"
     ]
   },
   "eventbrite.co.uk": {
@@ -835,9 +837,11 @@
   },
   "artificialanalysis.ai": {
     "first_seen": "2026-08-21T03:04:05.891141+00:00",
-    "mention_count": 2,
+    "mention_count": 4,
     "sample_urls": [
-      "https://artificialanalysis.ai/"
+      "https://artificialanalysis.ai/",
+      "https://artificialanalysis.ai/models/comparisons?compare=gpt-6-1-sol-high%2Cgrok-4-7-high%2Cclaude-opus-5-5-high%2Cclaude-sonnet-5-5-high%2Cg",
+      "https://artificialanalysis.ai/models/comparisons?compare=gpt-6-1-sol-high%2Cgrok-4-7-high%2Cclaude-opus-5-5-high%2Cclaude-sonnet-5-5-high%2Cgrok-4-6"
     ]
   },
   "modelscope.cn": {
@@ -1116,6 +1120,34 @@
     "mention_count": 1,
     "sample_urls": [
       "https://pragma-app.sh/"
+    ]
+  },
+  "felipebasurto.com": {
+    "first_seen": "2026-10-01T08:23:03.953648+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://felipebasurto.com/blog/model-context-is-not-static/"
+    ]
+  },
+  "alphaxiv.org": {
+    "first_seen": "2026-10-01T08:23:03.953911+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://www.alphaxiv.org/abs/2609.tokenization-survey-modern-nlp"
+    ]
+  },
+  "5ivatej.com": {
+    "first_seen": "2026-10-01T08:23:03.953948+00:00",
+    "mention_count": 2,
+    "sample_urls": [
+      "https://5ivatej.com/lessthink/"
+    ]
+  },
+  "cheqit.ortusai.io": {
+    "first_seen": "2026-10-01T08:23:03.953985+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://cheqit.ortusai.io/resources/rightwayup/"
     ]
   }
 }
