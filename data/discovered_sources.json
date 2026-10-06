@@ -50,7 +50,7 @@
   },
   "arxiv.org": {
     "first_seen": "2026-06-21T06:54:09.717379+00:00",
-    "mention_count": 19,
+    "mention_count": 21,
     "sample_urls": [
       "https://arxiv.org/abs/2511.05963",
       "https://arxiv.org/pdf/2212.09561",
@@ -61,7 +61,7 @@
   },
   "preview.redd.it": {
     "first_seen": "2026-06-21T06:54:09.717407+00:00",
-    "mention_count": 139,
+    "mention_count": 142,
     "sample_urls": [
       "https://preview.redd.it/dm4nh4t71o7h1.png?width=3082&amp",
       "https://preview.redd.it/8n3fvpcr578h1.png?width=1119&amp",
@@ -90,7 +90,7 @@
   },
   "forum.cursor.com": {
     "first_seen": "2026-06-21T06:54:09.717722+00:00",
-    "mention_count": 11,
+    "mention_count": 12,
     "sample_urls": [
       "https://forum.cursor.com/t/review-panel-doesnt-dismiss-rendering-it-useless-reproduced-by-another-user-too/163722",
       "https://forum.cursor.com/t/build-plan-in-new-agent/159995/10?u=pradeepcep",
@@ -231,7 +231,7 @@
   },
   "huggingface.co": {
     "first_seen": "2026-06-26T06:14:07.263565+00:00",
-    "mention_count": 46,
+    "mention_count": 55,
     "sample_urls": [
       "https://huggingface.co/roneneldan/TinyStories-33M",
       "https://huggingface.co/datasets/Dhiadev-tn/tunisian-darija-english",
@@ -465,11 +465,12 @@
   },
   "platform.claude.com": {
     "first_seen": "2026-07-21T05:23:06.032197+00:00",
-    "mention_count": 4,
+    "mention_count": 5,
     "sample_urls": [
       "https://platform.claude.com/docs/en/about-claude/pricing",
       "https://platform.claude.com/docs/en/agents-and-tools/tool-use/computer-use-tool",
-      "https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview"
+      "https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview",
+      "https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices"
     ]
   },
   "wecleantheinternet.com": {
@@ -481,9 +482,10 @@
   },
   "addons.mozilla.org": {
     "first_seen": "2026-07-21T05:23:06.032400+00:00",
-    "mention_count": 1,
+    "mention_count": 2,
     "sample_urls": [
-      "https://addons.mozilla.org/en-US/firefox/addon/wecleantheinternet/"
+      "https://addons.mozilla.org/en-US/firefox/addon/wecleantheinternet/",
+      "https://addons.mozilla.org/en-US/firefox/addon/tokensaver-image-optimizer/"
     ]
   },
   "sinnon.net": {
@@ -663,9 +665,10 @@
   },
   "cactuscompute.com": {
     "first_seen": "2026-08-11T03:46:04.542251+00:00",
-    "mention_count": 1,
+    "mention_count": 2,
     "sample_urls": [
-      "https://cactuscompute.com/needle"
+      "https://cactuscompute.com/needle",
+      "https://cactuscompute.com/blog/whistle"
     ]
   },
   "ood.dev": {
@@ -807,11 +810,12 @@
   },
   "doi.org": {
     "first_seen": "2026-08-21T03:04:05.890578+00:00",
-    "mention_count": 4,
+    "mention_count": 5,
     "sample_urls": [
       "https://doi.org/10.5281/zenodo.22028087",
       "https://doi.org/10.48550/arXiv.2609.02737",
-      "https://doi.org/10.5281/zenodo.22838708"
+      "https://doi.org/10.5281/zenodo.22838708",
+      "https://doi.org/10.5281/zenodo.23050796"
     ]
   },
   "eventbrite.co.uk": {
@@ -1148,6 +1152,62 @@
     "mention_count": 1,
     "sample_urls": [
       "https://cheqit.ortusai.io/resources/rightwayup/"
+    ]
+  },
+  "copilot.github.trust.page": {
+    "first_seen": "2026-10-06T08:37:03.985930+00:00",
+    "mention_count": 2,
+    "sample_urls": [
+      "https://copilot.github.trust.page/"
+    ]
+  },
+  "kitzkatz.github.io": {
+    "first_seen": "2026-10-06T08:37:03.986491+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://kitzkatz.github.io/memoria/"
+    ]
+  },
+  "pypi.org": {
+    "first_seen": "2026-10-06T08:37:03.986505+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://pypi.org/project/kitzkatz-memoria/"
+    ]
+  },
+  "localmind.naklitechie.com": {
+    "first_seen": "2026-10-06T08:37:03.986556+00:00",
+    "mention_count": 2,
+    "sample_urls": [
+      "https://localmind.naklitechie.com"
+    ]
+  },
+  "labs.evaligo.com": {
+    "first_seen": "2026-10-06T08:37:03.986999+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://labs.evaligo.com/swe-race?utm_source=reddit&amp"
+    ]
+  },
+  "indiatoday.in": {
+    "first_seen": "2026-10-06T08:37:03.987149+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://www.indiatoday.in/technology/news/story/ex-anthropic-researcher-jacob-coxon-warns-ai-could-get-out-of-control-and-end-humanity-3010428-2026-10-06"
+    ]
+  },
+  "en.etnews.com": {
+    "first_seen": "2026-10-06T08:37:03.987160+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://en.etnews.com/20261006200005"
+    ]
+  },
+  "terafab.ai": {
+    "first_seen": "2026-10-06T08:37:03.987289+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://terafab.ai/"
     ]
   }
 }
