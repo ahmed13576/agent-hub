@@ -50,7 +50,7 @@
   },
   "arxiv.org": {
     "first_seen": "2026-06-21T06:54:09.717379+00:00",
-    "mention_count": 25,
+    "mention_count": 26,
     "sample_urls": [
       "https://arxiv.org/abs/2511.05963",
       "https://arxiv.org/pdf/2212.09561",
@@ -61,7 +61,7 @@
   },
   "preview.redd.it": {
     "first_seen": "2026-06-21T06:54:09.717407+00:00",
-    "mention_count": 144,
+    "mention_count": 149,
     "sample_urls": [
       "https://preview.redd.it/dm4nh4t71o7h1.png?width=3082&amp",
       "https://preview.redd.it/8n3fvpcr578h1.png?width=1119&amp",
@@ -231,7 +231,7 @@
   },
   "huggingface.co": {
     "first_seen": "2026-06-26T06:14:07.263565+00:00",
-    "mention_count": 60,
+    "mention_count": 69,
     "sample_urls": [
       "https://huggingface.co/roneneldan/TinyStories-33M",
       "https://huggingface.co/datasets/Dhiadev-tn/tunisian-darija-english",
@@ -595,9 +595,10 @@
   },
   "claude.ai": {
     "first_seen": "2026-08-01T05:29:04.469142+00:00",
-    "mention_count": 1,
+    "mention_count": 2,
     "sample_urls": [
-      "https://claude.ai/code/artifact/dc880c46-ec67-485e-8dfc-6a3810f221f4"
+      "https://claude.ai/code/artifact/dc880c46-ec67-485e-8dfc-6a3810f221f4",
+      "https://claude.ai/artifact/JNBnuspjGxGw3vW1k9sMiY"
     ]
   },
   "informationism.org": {
@@ -644,9 +645,10 @@
   },
   "go.meta.me": {
     "first_seen": "2026-08-11T03:46:04.541875+00:00",
-    "mention_count": 1,
+    "mention_count": 2,
     "sample_urls": [
-      "https://go.meta.me/museglimmer"
+      "https://go.meta.me/museglimmer",
+      "https://go.meta.me/museopen"
     ]
   },
   "developer.meta.com": {
@@ -1265,6 +1267,34 @@
     "mention_count": 2,
     "sample_urls": [
       "https://malakachakra.github.io/dsViz/"
+    ]
+  },
+  "codeberg.org": {
+    "first_seen": "2026-10-16T06:48:03.248882+00:00",
+    "mention_count": 2,
+    "sample_urls": [
+      "https://codeberg.org/StillDeadcode/affinity"
+    ]
+  },
+  "usepattern.sh": {
+    "first_seen": "2026-10-16T06:48:03.249090+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://usepattern.sh"
+    ]
+  },
+  "100toolkit.com": {
+    "first_seen": "2026-10-16T06:48:03.249376+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://100toolkit.com/blog/where-ai-slop-comes-from/"
+    ]
+  },
+  "i.redd.it": {
+    "first_seen": "2026-10-16T06:48:03.249443+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://i.redd.it/lq0plprg69vh1.gif"
     ]
   }
 }
