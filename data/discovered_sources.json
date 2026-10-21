@@ -50,7 +50,7 @@
   },
   "arxiv.org": {
     "first_seen": "2026-06-21T06:54:09.717379+00:00",
-    "mention_count": 26,
+    "mention_count": 28,
     "sample_urls": [
       "https://arxiv.org/abs/2511.05963",
       "https://arxiv.org/pdf/2212.09561",
@@ -61,7 +61,7 @@
   },
   "preview.redd.it": {
     "first_seen": "2026-06-21T06:54:09.717407+00:00",
-    "mention_count": 149,
+    "mention_count": 153,
     "sample_urls": [
       "https://preview.redd.it/dm4nh4t71o7h1.png?width=3082&amp",
       "https://preview.redd.it/8n3fvpcr578h1.png?width=1119&amp",
@@ -231,7 +231,7 @@
   },
   "huggingface.co": {
     "first_seen": "2026-06-26T06:14:07.263565+00:00",
-    "mention_count": 69,
+    "mention_count": 74,
     "sample_urls": [
       "https://huggingface.co/roneneldan/TinyStories-33M",
       "https://huggingface.co/datasets/Dhiadev-tn/tunisian-darija-english",
@@ -1295,6 +1295,48 @@
     "mention_count": 1,
     "sample_urls": [
       "https://i.redd.it/lq0plprg69vh1.gif"
+    ]
+  },
+  "suncal.github.io": {
+    "first_seen": "2026-10-21T07:06:08.175156+00:00",
+    "mention_count": 2,
+    "sample_urls": [
+      "https://suncal.github.io/tokentrim/"
+    ]
+  },
+  "deepu.tech": {
+    "first_seen": "2026-10-21T07:06:08.175459+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://deepu.tech/qwen3.8-flash-next-vs-claude-opus-showdown"
+    ]
+  },
+  "b65.thekaiser.us": {
+    "first_seen": "2026-10-21T07:06:08.175544+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://b65.thekaiser.us/matrices/"
+    ]
+  },
+  "whafa.github.io": {
+    "first_seen": "2026-10-21T07:06:08.176035+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://whafa.github.io/mods-notebook/"
+    ]
+  },
+  "angry-kratos.github.io": {
+    "first_seen": "2026-10-21T07:06:08.176092+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://angry-kratos.github.io/posts/2026-10-kv-cache/"
+    ]
+  },
+  "investing.com": {
+    "first_seen": "2026-10-21T07:06:08.176208+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://www.investing.com/news/stock-market-news/anthropic-revenue-hits-163-billion-as-preliminary-s1-outlines-ipo-risks--wsj-4960928"
     ]
   }
 }
