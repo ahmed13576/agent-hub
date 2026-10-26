@@ -50,7 +50,7 @@
   },
   "arxiv.org": {
     "first_seen": "2026-06-21T06:54:09.717379+00:00",
-    "mention_count": 28,
+    "mention_count": 30,
     "sample_urls": [
       "https://arxiv.org/abs/2511.05963",
       "https://arxiv.org/pdf/2212.09561",
@@ -61,7 +61,7 @@
   },
   "preview.redd.it": {
     "first_seen": "2026-06-21T06:54:09.717407+00:00",
-    "mention_count": 153,
+    "mention_count": 164,
     "sample_urls": [
       "https://preview.redd.it/dm4nh4t71o7h1.png?width=3082&amp",
       "https://preview.redd.it/8n3fvpcr578h1.png?width=1119&amp",
@@ -90,7 +90,7 @@
   },
   "forum.cursor.com": {
     "first_seen": "2026-06-21T06:54:09.717722+00:00",
-    "mention_count": 12,
+    "mention_count": 13,
     "sample_urls": [
       "https://forum.cursor.com/t/review-panel-doesnt-dismiss-rendering-it-useless-reproduced-by-another-user-too/163722",
       "https://forum.cursor.com/t/build-plan-in-new-agent/159995/10?u=pradeepcep",
@@ -231,7 +231,7 @@
   },
   "huggingface.co": {
     "first_seen": "2026-06-26T06:14:07.263565+00:00",
-    "mention_count": 74,
+    "mention_count": 77,
     "sample_urls": [
       "https://huggingface.co/roneneldan/TinyStories-33M",
       "https://huggingface.co/datasets/Dhiadev-tn/tunisian-darija-english",
@@ -270,11 +270,12 @@
   },
   "discord.gg": {
     "first_seen": "2026-07-01T06:29:11.554605+00:00",
-    "mention_count": 4,
+    "mention_count": 5,
     "sample_urls": [
       "https://discord.gg/ysC2prTGD",
       "https://discord.gg/AjMxmq3wrb",
-      "https://discord.gg/QR7SARHRxK"
+      "https://discord.gg/QR7SARHRxK",
+      "https://discord.gg/VseNN9BdDc"
     ]
   },
   "anthropic.com": {
@@ -1337,6 +1338,41 @@
     "mention_count": 1,
     "sample_urls": [
       "https://www.investing.com/news/stock-market-news/anthropic-revenue-hits-163-billion-as-preliminary-s1-outlines-ipo-risks--wsj-4960928"
+    ]
+  },
+  "overflow.games": {
+    "first_seen": "2026-10-26T07:28:04.502471+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://overflow.games/memento/grader/?ref=reddit"
+    ]
+  },
+  "hivemind.yannbouteiller.com": {
+    "first_seen": "2026-10-26T07:28:04.502664+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://hivemind.yannbouteiller.com/"
+    ]
+  },
+  "mohammadi.cv": {
+    "first_seen": "2026-10-26T07:28:04.502798+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://mohammadi.cv/neurips/2026/"
+    ]
+  },
+  "rakkunn.github.io": {
+    "first_seen": "2026-10-26T07:28:04.503324+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://rakkunn.github.io/vicem/"
+    ]
+  },
+  "vibetoplist.com": {
+    "first_seen": "2026-10-26T07:28:04.503491+00:00",
+    "mention_count": 2,
+    "sample_urls": [
+      "https://vibetoplist.com/"
     ]
   }
 }
