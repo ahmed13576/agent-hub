@@ -50,7 +50,7 @@
   },
   "arxiv.org": {
     "first_seen": "2026-06-21T06:54:09.717379+00:00",
-    "mention_count": 30,
+    "mention_count": 32,
     "sample_urls": [
       "https://arxiv.org/abs/2511.05963",
       "https://arxiv.org/pdf/2212.09561",
@@ -61,7 +61,7 @@
   },
   "preview.redd.it": {
     "first_seen": "2026-06-21T06:54:09.717407+00:00",
-    "mention_count": 164,
+    "mention_count": 168,
     "sample_urls": [
       "https://preview.redd.it/dm4nh4t71o7h1.png?width=3082&amp",
       "https://preview.redd.it/8n3fvpcr578h1.png?width=1119&amp",
@@ -231,7 +231,7 @@
   },
   "huggingface.co": {
     "first_seen": "2026-06-26T06:14:07.263565+00:00",
-    "mention_count": 77,
+    "mention_count": 86,
     "sample_urls": [
       "https://huggingface.co/roneneldan/TinyStories-33M",
       "https://huggingface.co/datasets/Dhiadev-tn/tunisian-darija-english",
@@ -1373,6 +1373,50 @@
     "mention_count": 2,
     "sample_urls": [
       "https://vibetoplist.com/"
+    ]
+  },
+  "unsloth.ai": {
+    "first_seen": "2026-10-31T08:03:04.626869+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://unsloth.ai/docs/models/deepseek-v4.1-flash"
+    ]
+  },
+  "xda-developers.com": {
+    "first_seen": "2026-10-31T08:03:04.627140+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://www.xda-developers.com/qwen-invents-alibaba-urls-real-key-id-dont-think-backdoor/"
+    ]
+  },
+  "cohere.com": {
+    "first_seen": "2026-10-31T08:03:04.627153+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model"
+    ]
+  },
+  "outsideengineer.substack.com": {
+    "first_seen": "2026-10-31T08:03:04.627781+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://outsideengineer.substack.com/p/thinking-harder-doesnt-help-ai-catch"
+    ]
+  },
+  "news.ycombinator.com": {
+    "first_seen": "2026-10-31T08:03:04.627964+00:00",
+    "mention_count": 2,
+    "sample_urls": [
+      "https://news.ycombinator.com/item?id=50300683"
+    ]
+  },
+  "saidithere.com": {
+    "first_seen": "2026-10-31T08:03:04.628185+00:00",
+    "mention_count": 3,
+    "sample_urls": [
+      "https://saidithere.com/api/mcp",
+      "https://saidithere.com/api/mcp&quot",
+      "https://saidithere.com/developers"
     ]
   }
 }
