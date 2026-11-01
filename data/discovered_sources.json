@@ -61,7 +61,7 @@
   },
   "preview.redd.it": {
     "first_seen": "2026-06-21T06:54:09.717407+00:00",
-    "mention_count": 168,
+    "mention_count": 172,
     "sample_urls": [
       "https://preview.redd.it/dm4nh4t71o7h1.png?width=3082&amp",
       "https://preview.redd.it/8n3fvpcr578h1.png?width=1119&amp",
@@ -231,7 +231,7 @@
   },
   "huggingface.co": {
     "first_seen": "2026-06-26T06:14:07.263565+00:00",
-    "mention_count": 86,
+    "mention_count": 91,
     "sample_urls": [
       "https://huggingface.co/roneneldan/TinyStories-33M",
       "https://huggingface.co/datasets/Dhiadev-tn/tunisian-darija-english",
@@ -1417,6 +1417,63 @@
       "https://saidithere.com/api/mcp",
       "https://saidithere.com/api/mcp&quot",
       "https://saidithere.com/developers"
+    ]
+  },
+  "crowdgpt.net": {
+    "first_seen": "2026-11-01T08:45:07.273880+00:00",
+    "mention_count": 2,
+    "sample_urls": [
+      "https://www.crowdgpt.net/",
+      "https://www.crowdgpt.net/#submit"
+    ]
+  },
+  "share.jotbird.com": {
+    "first_seen": "2026-11-01T08:45:07.274015+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://share.jotbird.com/radiant-bold-desert-wind"
+    ]
+  },
+  "research.nvidia.com": {
+    "first_seen": "2026-11-01T08:45:07.274080+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://research.nvidia.com/labs/nemotron/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB"
+    ]
+  },
+  "aigarden.uk": {
+    "first_seen": "2026-11-01T08:45:07.274096+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://aigarden.uk/onethread"
+    ]
+  },
+  "opensource.googleblog.com": {
+    "first_seen": "2026-11-01T08:45:07.274283+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://opensource.googleblog.com/2026/10/introducing-elephant-goldfish-model-plugin.html"
+    ]
+  },
+  "todroth.com": {
+    "first_seen": "2026-11-01T08:45:07.274317+00:00",
+    "mention_count": 2,
+    "sample_urls": [
+      "https://todroth.com"
+    ]
+  },
+  "aiparabellum.com": {
+    "first_seen": "2026-11-01T08:45:07.274342+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://aiparabellum.com/customize-smart-tv-claude-code/"
+    ]
+  },
+  "arelvox.com": {
+    "first_seen": "2026-11-01T08:45:07.274420+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://arelvox.com/claude-code-extension-cursor-backdoor/"
     ]
   }
 }
