@@ -50,7 +50,7 @@
   },
   "arxiv.org": {
     "first_seen": "2026-06-21T06:54:09.717379+00:00",
-    "mention_count": 32,
+    "mention_count": 33,
     "sample_urls": [
       "https://arxiv.org/abs/2511.05963",
       "https://arxiv.org/pdf/2212.09561",
@@ -61,7 +61,7 @@
   },
   "preview.redd.it": {
     "first_seen": "2026-06-21T06:54:09.717407+00:00",
-    "mention_count": 172,
+    "mention_count": 174,
     "sample_urls": [
       "https://preview.redd.it/dm4nh4t71o7h1.png?width=3082&amp",
       "https://preview.redd.it/8n3fvpcr578h1.png?width=1119&amp",
@@ -231,7 +231,7 @@
   },
   "huggingface.co": {
     "first_seen": "2026-06-26T06:14:07.263565+00:00",
-    "mention_count": 91,
+    "mention_count": 95,
     "sample_urls": [
       "https://huggingface.co/roneneldan/TinyStories-33M",
       "https://huggingface.co/datasets/Dhiadev-tn/tunisian-darija-english",
@@ -351,9 +351,10 @@
   },
   "npmjs.com": {
     "first_seen": "2026-07-06T06:31:13.967640+00:00",
-    "mention_count": 1,
+    "mention_count": 2,
     "sample_urls": [
-      "https://www.npmjs.com/package/nymor"
+      "https://www.npmjs.com/package/nymor",
+      "https://www.npmjs.com/package/agent-blackbox-mcp"
     ]
   },
   "hivehq.dev": {
@@ -1370,7 +1371,7 @@
   },
   "vibetoplist.com": {
     "first_seen": "2026-10-26T07:28:04.503491+00:00",
-    "mention_count": 2,
+    "mention_count": 4,
     "sample_urls": [
       "https://vibetoplist.com/"
     ]
@@ -1474,6 +1475,57 @@
     "mention_count": 1,
     "sample_urls": [
       "https://arelvox.com/claude-code-extension-cursor-backdoor/"
+    ]
+  },
+  "qwenapp.github.io": {
+    "first_seen": "2026-11-06T09:00:04.327920+00:00",
+    "mention_count": 2,
+    "sample_urls": [
+      "https://qwenapp.github.io/SpecOPD/specopd-paper.pdf",
+      "https://qwenapp.github.io/SpecOPD/en.html"
+    ]
+  },
+  "agenteconomics.org": {
+    "first_seen": "2026-11-06T09:00:04.328018+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://agenteconomics.org/posts/agentic-rl-recipe"
+    ]
+  },
+  "nikuson.github.io": {
+    "first_seen": "2026-11-06T09:00:04.328095+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://nikuson.github.io/silencio-2-weight-edit/"
+    ]
+  },
+  "fortune.com": {
+    "first_seen": "2026-11-06T09:00:04.328149+00:00",
+    "mention_count": 2,
+    "sample_urls": [
+      "https://fortune.com/2026/11/03/apple-warns-rogue-ai-agents-could-",
+      "https://fortune.com/2026/11/03/apple-warns-rogue-ai-agents-could-cause-unintended-consequences/"
+    ]
+  },
+  "zlab-princeton.github.io": {
+    "first_seen": "2026-11-06T09:00:04.328421+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://zlab-princeton.github.io/AgentVQA/"
+    ]
+  },
+  "bloomberg.com": {
+    "first_seen": "2026-11-06T09:00:04.328431+00:00",
+    "mention_count": 2,
+    "sample_urls": [
+      "https://www.bloomberg.com/news/articles/2026-11-04/apple-cuts-internal-ai-usage-budgets-in-move-to-reduce-spending"
+    ]
+  },
+  "myearthtoy.com": {
+    "first_seen": "2026-11-06T09:00:04.328520+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://myearthtoy.com/"
     ]
   }
 }
