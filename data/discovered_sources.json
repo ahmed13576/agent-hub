@@ -50,7 +50,7 @@
   },
   "arxiv.org": {
     "first_seen": "2026-06-21T06:54:09.717379+00:00",
-    "mention_count": 33,
+    "mention_count": 34,
     "sample_urls": [
       "https://arxiv.org/abs/2511.05963",
       "https://arxiv.org/pdf/2212.09561",
@@ -61,7 +61,7 @@
   },
   "preview.redd.it": {
     "first_seen": "2026-06-21T06:54:09.717407+00:00",
-    "mention_count": 174,
+    "mention_count": 179,
     "sample_urls": [
       "https://preview.redd.it/dm4nh4t71o7h1.png?width=3082&amp",
       "https://preview.redd.it/8n3fvpcr578h1.png?width=1119&amp",
@@ -231,7 +231,7 @@
   },
   "huggingface.co": {
     "first_seen": "2026-06-26T06:14:07.263565+00:00",
-    "mention_count": 95,
+    "mention_count": 98,
     "sample_urls": [
       "https://huggingface.co/roneneldan/TinyStories-33M",
       "https://huggingface.co/datasets/Dhiadev-tn/tunisian-darija-english",
@@ -305,7 +305,7 @@
   },
   "cursor.com": {
     "first_seen": "2026-07-01T06:29:11.555119+00:00",
-    "mention_count": 12,
+    "mention_count": 13,
     "sample_urls": [
       "https://cursor.com/blog/ios-mobile-app",
       "https://cursor.com/blog/agent-swarm-model-economics",
@@ -1119,9 +1119,10 @@
   },
   "open-vsx.org": {
     "first_seen": "2026-09-21T07:41:03.691987+00:00",
-    "mention_count": 1,
+    "mention_count": 3,
     "sample_urls": [
-      "https://open-vsx.org/extension/AbdelrahmanMSalim/composer-zoom"
+      "https://open-vsx.org/extension/AbdelrahmanMSalim/composer-zoom",
+      "https://open-vsx.org/extension/salvvv/codex-dock"
     ]
   },
   "pragma-app.sh": {
@@ -1140,9 +1141,10 @@
   },
   "alphaxiv.org": {
     "first_seen": "2026-10-01T08:23:03.953911+00:00",
-    "mention_count": 1,
+    "mention_count": 2,
     "sample_urls": [
-      "https://www.alphaxiv.org/abs/2609.tokenization-survey-modern-nlp"
+      "https://www.alphaxiv.org/abs/2609.tokenization-survey-modern-nlp",
+      "https://www.alphaxiv.org/abs/2611.08483"
     ]
   },
   "5ivatej.com": {
@@ -1526,6 +1528,79 @@
     "mention_count": 1,
     "sample_urls": [
       "https://myearthtoy.com/"
+    ]
+  },
+  "agenticlearning.ai": {
+    "first_seen": "2026-11-11T08:54:04.223460+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://agenticlearning.ai/deleting-weights/"
+    ]
+  },
+  "cdn.agenticlearning.ai": {
+    "first_seen": "2026-11-11T08:54:04.223504+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://cdn.agenticlearning.ai/dfb9bf24cee86b6d/neurips2026-poster-deleting-weights.pdf"
+    ]
+  },
+  "zyphra.com": {
+    "first_seen": "2026-11-11T08:54:04.223555+00:00",
+    "mention_count": 2,
+    "sample_urls": [
+      "https://www.zyphra.com/our-work/zonos3-mini",
+      "https://www.zyphra.com/models/zonos3-mini"
+    ]
+  },
+  "ifm.ai": {
+    "first_seen": "2026-11-11T08:54:04.223604+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://ifm.ai/blog/pan2/"
+    ]
+  },
+  "bielik.ai": {
+    "first_seen": "2026-11-11T08:54:04.223633+00:00",
+    "mention_count": 2,
+    "sample_urls": [
+      "https://www.bielik.ai/blog/premiera-modeli-bielik-11b-v31-dflash-i-rodziny-bielik-one"
+    ]
+  },
+  "chat.bielik.ai": {
+    "first_seen": "2026-11-11T08:54:04.223644+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://chat.bielik.ai/"
+    ]
+  },
+  "rakgoorak.github.io": {
+    "first_seen": "2026-11-11T08:54:04.223713+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://rakgoorak.github.io/SuperAi-RAKKYXD-releases/"
+    ]
+  },
+  "dev.to": {
+    "first_seen": "2026-11-11T08:54:04.223784+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://dev.to/premjethwa/building-an-orchestrator-for-claude-code-recoverable-before-autonomous-3f83"
+    ]
+  },
+  "lab.einsia.ai": {
+    "first_seen": "2026-11-11T08:54:04.223839+00:00",
+    "mention_count": 3,
+    "sample_urls": [
+      "https://lab.einsia.ai/workflowarena/home.html",
+      "https://lab.einsia.ai/frontier3dbench",
+      "https://lab.einsia.ai/frontier3dbench/Frontier3DBench.pdf"
+    ]
+  },
+  "deepmind.google": {
+    "first_seen": "2026-11-11T08:54:04.223966+00:00",
+    "mention_count": 1,
+    "sample_urls": [
+      "https://deepmind.google/blog/introducing-alphaproof-code/"
     ]
   }
 }
